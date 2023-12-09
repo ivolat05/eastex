@@ -22,7 +22,9 @@
 	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#00c3ff">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
-
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
 	<title>Главная страница</title>
 	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
@@ -30,8 +32,8 @@
 <body>
 	<div class="page">
 		<main>
-			<header>
-	<div class="wrapper">
+			<header class="header">
+	<div class="header__wrapper">
 		<div class="header-content">
 			<div class="header-logo">
 				<img src="assets/img/logo.png" alt="">
@@ -63,7 +65,7 @@
 				<div class="header__nav-bottom">
 					<ul>
 						<li><a href="">Почему мы</a></li>
-						<li><a href="">Отрасли</a></li>
+						<li><a href="" class="--active">Отрасли</a></li>
 						<li><a href="">Таможенное оформление</a></li>
 						<li><a href="">Перевозки</a></li>
 						<li><a href="">Услуги</a></li>
@@ -72,9 +74,10 @@
 				</div>
 			</div>
 			<div class="header-login">
-				<div class="header__login-login">
-					<span>Logos <img src="assets/img/login.png" alt=""></span>
-				</div>
+				<a href="#" class="header__login-login">
+					<span>Logos </span>
+					<img src="assets/img/login.png" alt="">
+				</a>
 				<div class="header-login-feedback">
 					<button><span>Отправить заявку</span><img src="assets/img/tables.gif" alt=""></button>
 				</div>
@@ -93,7 +96,7 @@
 </section>
 			<section class="about"
 	style="background-image: radial-gradient(transparent, #000000ba), url(assets/img/Rectangle.png);">
-	<div class="wrapper">
+	<div class="wrapper about-wrapper">
 		<div class="about-content">
 			<div class="about-title">
 				<p>Сильнее, чем когда либо</p>
@@ -131,7 +134,7 @@
 	</div>
 </section>
 			<section class="industries">
-	<div class="wrapper">
+	<div class="wrapper industries-wrapper">
 		<div class="industries-content">
 			<div class="industries-title">
 				<h3>В КАКОЙ БЫ ОТРАСЛИ ВЫ НЕ РАБОТАЛИ - МЫ НАЙДЕМ ДЛЯ ВАС РЕШЕНИЕ </h3>
@@ -142,7 +145,7 @@
 				</p>
 			</div>
 			<div class="industries-grid">
-				<div class="industries__grid-card">
+				<a href="#" class="industries__grid-card">
 					<img src="assets/img/Frame.svg" alt="">
 					<div class="industries__grid-card-text">
 						<div class="industries__grid-card-title">
@@ -173,8 +176,8 @@
 							</svg>
 						</div>
 					</div>
-				</div>
-				<div class="industries__grid-card">
+				</a>
+				<a href="#" class="industries__grid-card">
 					<img src="assets/img/Frame2.svg" alt="">
 					<div class="industries__grid-card-text">
 						<div class="industries__grid-card-title">
@@ -205,8 +208,8 @@
 							</svg>
 						</div>
 					</div>
-				</div>
-				<div class="industries__grid-card">
+				</a>
+				<a href="#" class="industries__grid-card">
 					<img src="assets/img/Frame3.svg" alt="">
 					<div class="industries__grid-card-text">
 						<div class="industries__grid-card-title">
@@ -237,12 +240,12 @@
 							</svg>
 						</div>
 					</div>
-				</div>
-				<div class="industries__grid-card">
+				</a>
+				<a href="#" class="industries__grid-card">
 					<img src="assets/img/Frame4.svg" alt="">
 					<div class="industries__grid-card-text">
 						<div class="industries__grid-card-title">
-							<h5>Электроника и технологии</h5>
+							<h5>Розничная торговля</h5>
 						</div>
 						<div class="industries__grid-card-desc">
 							<p>Транспортные и логистические услуги для оптимизации цепочек  поставок и соблюдения более
@@ -269,10 +272,10 @@
 							</svg>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="industries-postgrid">
-				<div class="industries__postgrid-card">
+				<a href="#" class="industries__postgrid-card">
 					<div class="industries__grid-card-text">
 						<div class="industries__grid-card-title">
 							<h5>Автомобильная промышленность </h5>
@@ -307,8 +310,8 @@
 						<img src="assets/img/Group (1).svg" alt="">
 						<img src="assets/img/Group (2).svg" alt="">
 					</div>
-				</div>
-				<div class="industries__postgrid-card">
+				</a>
+				<a href="#" class="industries__postgrid-card">
 					<img src="assets/img/Group3.svg" alt="">
 					<div class="industries__grid-card-text">
 						<div class="industries__grid-card-title">
@@ -339,27 +342,29 @@
 							</svg>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
 			<section class="services" style="background-image: url(assets/img/back2.png);">
-	<div class="wrapper">
+	<div class="wrapper services-wrapper">
 		<div class="services-content">
 			<div class="services-title">
 				<div class="services__title-left">
-					<p>Хотите узнать больше о <br> наших услугах и решениях</p>
+					<h3>Хотите узнать больше о <br> наших услугах и решениях</h3>
 				</div>
 				<div class="services__title-right">
 					<p>Наш подход к Зрl логистике - индивидуальный и клиентоориентированный. Мы работаем на основе
 						долгосрочных партнерских
 						отношений, чтобы полностью удовлетворить потребности каждого клиента. Наша команда
 						профессионалов с удовольствием
-						разработает оптимальное решение для ваших потребностей логистики. <br>
+						разработает оптимальное решение для ваших потребностей логистики. </p>
+					<p>
 						Если вы ищете надежного партнера для ваших логистических операций, обращайтесь к нам. Мы готовы
 						предложить вам полный комплекс услуг по Зpl логистике, которые помогут вам оптимизировать
 						процессы и сэкономить время и ресурсы.</p>
+
 				</div>
 			</div>
 		</div>
@@ -369,48 +374,48 @@
 				<p>Аутсортинг ВЭД</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser2.svg" alt="">
+				<p>импорт грузов</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser3.svg" alt="">
+				<p>Экспорт грузов</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser4.png" alt="">
+				<p>Таможенное оформление</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser5.png" alt="">
+				<p>Складские услуги</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser6.png" alt="">
+				<p>Контроль качества и отгрузки товаров в Китае</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser7.png" alt="">
+				<p>Маркировка товара</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser8.png" alt="">
+				<p>Оформление разрешительных документов</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser9.png" alt="">
+				<p>Консолидация грузов</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser10.png" alt="">
+				<p>Аудит постовщика</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser11.png" alt="">
+				<p>Поиск постовщика</p>
 			</div>
 			<div class="services-item">
-				<img src="assets/img/ser1.svg" alt="">
-				<p>Аутсортинг ВЭД</p>
+				<img src="assets/img/ser12.png" alt="">
+				<p>Таможенный транзит</p>
 			</div>
 		</div>
 	</div>
@@ -418,105 +423,219 @@
 			<section class="why">
 	<div class="wrapper">
 		<div class="why-container">
-			<div class="why-item">
+			<div class="why-item why-item-text">
 				<h3>Почему мы</h3>
 				<p>Уже более двадцати лет наша компания оттачивает мастерство в организации доставки и оказании
 					логистических услуг в сегменте перевозок между КНР и РФ. Ассортимент предлагаемых нами услуг
 					включает полный комплекс 3PL в сочетании с гибким индивидуальным подходом.</p>
-				<br>
+
 				<p>Партнёрство для нас – основная ценность. Мы заинтересованы в долгосрочном сотрудничестве и искренне
 					рассматриваем потребности партнёра как свои. Благодаря этой политике уже не первый год наша кампания
 					занимает первые места на престижных государственных конкурсах и подтверждает статус лидера рынка.
 					Можно ли однозначно ответить на вопрос – почему мы?</p>
-				<br>
+
 				<p>Да. Мы – лучшие. А вместе станем ещё лучше!</p>
 			</div>
-			<div class="why-item">
-				<div class="why-item-gradient">
-					<h4>Награды</h4>
-					<p>Имеем награды в области многих логистических услуг</p>
+
+			<a href="#" class="why-item-block-1  why-item-gradient">
+				<h4>Квалифицированные сотрудник</h4>
+				<p>Наши сотрудники имеет большой опыт в международной логистики владеющий английским и китайским языком
+				</p>
+			</a>
+
+			<a href="#" class="why-item-block-2  why-item-gradient">
+				<h4>Отлаженное слежение грузов</h4>
+				<p>Владеем всей информацией о перемещении груза для вас в режиме онлайн 24/7</p>
+			</a>
+
+			<a href="#" class="why-item-block-3  why-item-gradient">
+				<h4>Награды</h4>
+				<p>Имеем награды в области многих логистических услуг</p>
+			</a>
+
+			<a href="#" class="why-item-block-4  why-item-gradient">
+				<div class="why-item-gradient-container">
+					<h4>Комплексные услуги, не просто доставка</h4>
+					<p>Оказываем весь спектр услуг в области логистики “под ключ”</p>
 				</div>
-			</div>
-			<div class="why-item">
-				<div class="why-item-gradient">
-					<h4>Награды</h4>
-					<p>Имеем награды в области многих логистических услуг</p>
+			</a>
+
+			<a href="#" class="why-item-block-5  why-item-gradient">
+				<h4>Контроль процесса  таможенного оформления</h4>
+				<p>Лично присутствуем на основных таможенных постах. Прием и регистрация деклараций. Подбор кода ТН ВЭД.
+					Сверка указанной стоимости. Мероприятия по досмотру грузов</p>
+			</a>
+
+			<a href="#" class="why-item-block-6  why-item-gradient">
+				<div class="why-item-gradient-container">
+					<h4>Всегда вовремя </h4>
+					<p>Опыту и отработанным маршрутам, компания обеспечивает оптимальные условия доставки. из любой
+						точки
+						Мира</p>
 				</div>
-			</div>
-			<div class="why-item">
-				<div class="why-item-gradient">
-					<h4>Награды</h4>
-					<p>Имеем награды в области многих логистических услуг</p>
-				</div>
-			</div>
-			<div class="why-item">
-				<div class="why-item-gradient">
-					<h4>Награды</h4>
-					<p>Имеем награды в области многих логистических услуг</p>
-				</div>
-			</div>
-			<div class="why-item">
-				<div class="why-item-gradient">
-					<h4>Награды</h4>
-					<p>Имеем награды в области многих логистических услуг</p>
-				</div>
-			</div>
-			<div class="why-item">
-				<div class="why-item-gradient">
-					<h4>Награды</h4>
-					<p>Имеем награды в области многих логистических услуг</p>
-				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 </section>
 			<section class="contact">
-	<div class="wrapper">
+	<div class="wrapper contact-wrapp">
 		<h3>Присоединяйтесь к Нам</h3>
 		<h6>Станьте частью нашей команды и получите возможности, которые помогут вам преуспеть в вашем бизнесе.</h6>
 		<div class="swiper-container contact-slider">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<p>“Стремление к совершенству является нашей миссией. Для нас большая честь, когда компании, с
-						которыми мы работаем, признают наш превосходный сервис.”</p>
+				<div class="swiper-slide contact-swiper-slide">
+					<p>“Стремление к совершенству является нашей миссией.<br> Для нас большая честь, когда компании, с
+						которыми мы работаем,<br> признают наш превосходный сервис.”</p>
+					<div class="contact__slide-indecatro"></div>
 					<p class="author">Директор DNS | Павлов Михаил</p>
 				</div>
-				<div class="swiper-slide">
+				<div class="swiper-slide contact-swiper-slide">
 					<p>“Стремление к совершенству является нашей миссией. Для нас большая честь, когда компании, с
 						которыми мы работаем, признают наш превосходный сервис.”</p>
+					<div class="contact__slide-indecatro"></div>
 					<p class="author">Директор DNS | Павлов Михаил</p>
 				</div>
 			</div>
-			<div class="swiper-pagination"></div>
+			<div class="swiper-pagination contact__slide-pagination"></div>
 		</div>
 		<div class="contact-block">
-			<div>
-				<strong>Есть вопросы?</strong>
+			<div class="contact-block-text">
+				<h3>Есть вопросы?</h3>
 				<p>Наши специалисты готовы помочь. Свяжитесь с нами, и мы найдем необходимое вам решение.</p>
 			</div>
-			<div>
-				<img src="assets/img/man.png" alt="">
-			</div>
-			<div>
-				<button>Свяжитесь с нами онлайн</button>
-			</div>
+
+			<img src="assets/img/man.png" alt="">
+
+
+			<button class="contact-btn">Свяжитесь с нами онлайн</button>
+
 		</div>
 	</div>
 </section>
-			<section class="premap">
-	<div class="wrapper">
-		<h3>Офисы компании</h3>
-		<div class="premap-container">
-			<div class="premap-item active">Москва</div>
-			<div class="premap-item">Владивосток</div>
-			<div class="premap-item">Шанхай</div>
+			<div class="map-container">
+	<section class="premap">
+		<div class="wrapper premap-wrapper">
+			<h3>Офисы компании</h3>
+			<div class="premap-container">
+				<label class="   label">
+					<input checked name="map" class="tab-input premap-item-item label-input" type="radio"
+						data-tab="map-1">
+					<span class="tab-input-span premap-item label-input-span">
+						Москва
+					</span>
+				</label>
+				<label class="   label">
+					<input name="map" class="tab-input premap-item-item label-input" type="radio" data-tab="map-2">
+					<span class="tab-input-span premap-item label-input-span">
+						Владивосток
+					</span>
+				</label>
+				<label class="   label">
+					<input name="map" class="tab-input premap-item-item label-input" type="radio" data-tab="map-3">
+					<span class="tab-input-span premap-item label-input-span">
+						Шанхай
+					</span>
+				</label>
+			</div>
+		</div>
+	</section>
+	<div id="map-1" class="tab   map__wrapper">
+
+		<iframe class="map"
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae955f891c7ddd4aeb3a8327545236bca434fe057821a0b026d703c1b00bf7a2f&amp;source=constructor"
+			width="100%" height="400" frameborder="0"></iframe>
+		<div class="map__wrapp-row">
+			<div class="wrapper map__wrapp-row-wrapper">
+				<div class="map__babel">
+					<a href="tel:+74951865463" class="map__babel-link">
+						<img src="assets/img/tells.png" alt="">
+						<span>
+							+7 (495) 186-54-63
+						</span>
+					</a>
+					<a href="mailto:info@eastex.ru" class="map__babel-link">
+						<img src="assets/img/mail.png" alt="">
+						<span>
+							info@eastex.ru
+						</span>
+
+					</a>
+					<div class="map__babel-text">
+						<img src="assets/img/marker.png" alt="">
+						<span>
+							125040, г. Москва 3-я улица Ямского поля д. 2, корп. 12, офис 510
+						</span>
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</section>
-<iframe
-	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29342.183288407832!2d37.58711807437298!3d55.76240723890347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b3fb252cab5%3A0x6c6123ea21323636!2sEASTEX!5e0!3m2!1sru!2sru!4v1701940753971!5m2!1sru!2sru"
-	width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-	referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<div id="map-2" class="tab map__wrapper">
+		<iframe class="map"
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A5e8e17caed57de554b3fb31fa4a323e9a731c92f4f5794764e32aaebb47efd98&amp;source=constructor"
+			width="100%" height="400" frameborder="0"></iframe>
+		<div class="map__wrapp-row">
+			<div class="wrapper map__wrapp-row-wrapper">
+				<div class="map__babel">
+					<a href="tel:+74951865463" class="map__babel-link">
+						<img src="assets/img/tells.png" alt="">
+						<span>
+							text 1
+						</span>
+					</a>
+					<a href="mailto:info@eastex.ru" class="map__babel-link">
+						<img src="assets/img/mail.png" alt="">
+						<span>
+							text 2
+						</span>
+
+					</a>
+					<div class="map__babel-text">
+						<img src="assets/img/marker.png" alt="">
+						<span>
+							text 3
+						</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="map-3" class="tab map__wrapper">
+
+		<iframe class="map"
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae955f891c7ddd4aeb3a8327545236bca434fe057821a0b026d703c1b00bf7a2f&amp;source=constructor"
+			width="100%" height="400" frameborder="0"></iframe>
+		<div class="map__wrapp-row">
+			<div class="wrapper map__wrapp-row-wrapper">
+				<div class="map__babel">
+					<a href="tel:+74951865463" class="map__babel-link">
+						<img src="assets/img/tells.png" alt="">
+						<span>
+							text 4
+						</span>
+					</a>
+					<a href="mailto:info@eastex.ru" class="map__babel-link">
+						<img src="assets/img/mail.png" alt="">
+						<span>
+							text 5
+						</span>
+
+					</a>
+					<div class="map__babel-text">
+						<img src="assets/img/marker.png" alt="">
+						<span>
+							text 6
+						</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 			<section class="blocks">
 	<div class="wrapper">
 		<h3>НАЙДИТЕ СПОСОБЫ УЛУЧШИТЬ СВОЮ ЦЕПОЧКУ ПОСТАВОК И ЛОГИСТИЧЕСКУЮ СТРАТЕГИЮ</h3>
@@ -598,7 +717,8 @@
 </footer>
 		</main>
 	</div>
-
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 	<script src="assets/js/app.min.js"></script>
 </body>
 

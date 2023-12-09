@@ -16,12 +16,33 @@
  //# sourceMappingURL=swiper-bundle.min.js.map
 
 var contact = new Swiper(".contact-slider", {
-	spaceBetween: 30,
+	spaceBetween: 0,
 	pagination: {
 		el: ".swiper-pagination",
-		clickable: true,
+	},
+	on: {
+		init: function () {
+			visibleLineIndecatro();
+		},
+		slideChange: () => {
+			visibleLineIndecatro();
+		},
 	},
 });
+
+function visibleLineIndecatro() {
+	let indicarot = document.querySelector(
+		".contact__slide-pagination"
+	).innerHTML;
+	let contactSlideIndecatrorAll = document.querySelectorAll(
+		".contact__slide-indecatro"
+	);
+	if (indicarot && contactSlideIndecatrorAll) {
+		contactSlideIndecatrorAll.forEach((item) => {
+			item.innerHTML = indicarot;
+		});
+	}
+}
 
 var cards = document.querySelectorAll(".about__cards-card p");
 var card1Count = 0;
@@ -85,6 +106,38 @@ for (let i = 0; i < premapItems.length; i++) {
 			} else {
 				premapItems[j].classList.remove("active");
 			}
+		}
+	});
+}
+
+const tab = () => {
+	const input = document.querySelectorAll(".tab-input");
+	if (input) {
+		tabActive(input);
+		input.forEach((item) => {
+			item.addEventListener("input", () => {
+				tabActive(input);
+			});
+		});
+	}
+};
+tab();
+
+function tabDeactive() {
+	const tab = document.querySelectorAll(".tab");
+	if (tab) {
+		tab.forEach((item) => {
+			item.classList.remove("--active");
+		});
+	}
+}
+function tabActive(inputs) {
+	tabDeactive();
+	inputs.forEach((item) => {
+		if (item.checked) {
+			let dataTab = item.getAttribute("data-tab");
+			let id = document.getElementById(dataTab);
+			id.classList.add("--active");
 		}
 	});
 }
