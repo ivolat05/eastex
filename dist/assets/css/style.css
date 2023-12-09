@@ -1744,6 +1744,7 @@ header {
 }
 .about {
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .about-wrapper {
@@ -2300,6 +2301,7 @@ header {
   background-position: fixed;
   color: #FFF;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .services-wrapper {
