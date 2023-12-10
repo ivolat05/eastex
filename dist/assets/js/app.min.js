@@ -282,6 +282,26 @@ function closeMenu(menu, body) {
 	}
 }
 ;
+function baner() {
+	const bannerWrapp = document.querySelector(".banners__swiper");
+	const bannerInstall = {
+		slidesPerView: 1,
+		spaceBetween: 7,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
+		pagination: {
+			el: ".banner__swiper-pagination",
+			type: "bullets",
+		},
+	};
+	if (bannerWrapp) {
+		const bannerSwiper = new Swiper(bannerWrapp, bannerInstall);
+	}
+}
+baner();
+
   AOS.init({
   	duration: 2400,
   }
