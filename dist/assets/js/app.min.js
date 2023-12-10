@@ -76,7 +76,7 @@ function openModalWindow() {
 }
 openModalWindow();
 
-var contact = new Swiper(".contact-slider", {
+const contact = new Swiper(".contact-slider", {
 	spaceBetween: 0,
 	pagination: {
 		el: ".swiper-pagination",
@@ -105,70 +105,72 @@ function visibleLineIndecatro() {
 	}
 }
 
-var cards = document.querySelectorAll(".about__cards-card p");
-var card1Count = 0;
-var card2Count = 0;
-var card3Count = 0;
-var card4Count = 0;
+const cards = document.querySelectorAll(".about__cards-card p");
+if (cards) {
+	let card1Count = 0;
+	let card2Count = 0;
+	let card3Count = 0;
+	let card4Count = 0;
 
-function iterate1() {
-	if (card1Count != 25) {
-		cards[0].innerHTML = card1Count;
-		card1Count++;
-		setTimeout(iterate1, 100);
+	function iterate1() {
+		if (card1Count != 25) {
+			cards[0].innerHTML = card1Count;
+			card1Count++;
+			setTimeout(iterate1, 100);
+		}
+	}
+
+	function iterate2() {
+		if (card2Count != 99) {
+			cards[1].innerHTML = card2Count + "%";
+			card2Count++;
+			setTimeout(iterate2, 30);
+		}
+	}
+
+	function iterate3() {
+		if (card3Count != 31) {
+			cards[2].innerHTML = card3Count + "%";
+			card3Count++;
+			setTimeout(iterate3, 80);
+		}
+	}
+
+	function iterate4() {
+		if (card4Count != 701) {
+			cards[3].innerHTML = card4Count + "+";
+			card4Count++;
+			setTimeout(iterate4, 1);
+		}
 	}
 }
-
-function iterate2() {
-	if (card2Count != 99) {
-		cards[1].innerHTML = card2Count + "%";
-		card2Count++;
-		setTimeout(iterate2, 30);
-	}
-}
-
-function iterate3() {
-	if (card3Count != 31) {
-		cards[2].innerHTML = card3Count + "%";
-		card3Count++;
-		setTimeout(iterate3, 80);
-	}
-}
-
-function iterate4() {
-	if (card4Count != 701) {
-		cards[3].innerHTML = card4Count + "+";
-		card4Count++;
-		setTimeout(iterate4, 1);
-	}
-}
-
-var aboutBlock = document.querySelector(".about-cards");
-
-var observer = new IntersectionObserver(function (entries) {
-	if (entries[0].isIntersecting) {
-		iterate1();
-		iterate2();
-		iterate3();
-		iterate4();
-		observer.disconnect();
-	}
-});
-
-observer.observe(aboutBlock);
-
-var premapItems = document.querySelectorAll(".premap-item");
-
-for (let i = 0; i < premapItems.length; i++) {
-	premapItems[i].addEventListener("click", (e) => {
-		for (let j = 0; j < premapItems.length; j++) {
-			if (e.target == premapItems[j]) {
-				premapItems[j].classList.add("active");
-			} else {
-				premapItems[j].classList.remove("active");
-			}
+const aboutBlock = document.querySelector(".about-cards");
+if (aboutBlock) {
+	const observer = new IntersectionObserver(function (entries) {
+		if (entries[0].isIntersecting) {
+			iterate1();
+			iterate2();
+			iterate3();
+			iterate4();
+			observer.disconnect();
 		}
 	});
+
+	observer.observe(aboutBlock);
+}
+const premapItems = document.querySelectorAll(".premap-item");
+if (premapItems) {
+	for (let i = 0; i < premapItems.length; i++) {
+		premapItems[i].addEventListener("click", (e) => {
+			for (let j = 0; j < premapItems.length; j++) {
+				if (e.target == premapItems[j]) {
+					premapItems[j].classList.add("active");
+				} else {
+					premapItems[j].classList.remove("active");
+				}
+			}
+		});
+	}
 }
 
 const tab = () => {
@@ -212,6 +214,20 @@ const blockSwipers = () => {
 		autoplay: {
 			delay: 5000,
 		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			572: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			1240: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+		},
 	};
 	if (swiperBlockContainer) {
 		const swiperBlocks = new Swiper(swiperBlockContainer, instalSwiper);
@@ -231,8 +247,42 @@ function maskPhone() {
 
 maskPhone();
 
-AOS.init({
+const menu = () => {
+	const btnOpen = document.querySelector(".header__open-btn");
+	const btnClose = document.querySelectorAll(".header__close-btn");
+	const menu = document.querySelector(".header-mobil-wrapper");
+	const body = document.querySelector("body");
+	if (btnOpen && btnClose && menu) {
+		btnOpen.addEventListener("click", () => {
+			openMenu(menu, body);
+		});
+		btnClose.forEach((item) => {
+			item.addEventListener("click", () => {
+				closeMenu(menu, body);
+			});
+		});
 
-	duration: 3000,
+		window.addEventListener("resize", () => {
+			closeMenu(menu, body);
+		});
+	}
+};
+menu();
+function openMenu(menu, body) {
+	if (menu && body) {
+		menu.classList.add("--active");
+		body.classList.add("--stop");
+	}
 }
-);
+
+function closeMenu(menu, body) {
+	if (menu && body) {
+		menu.classList.remove("--active");
+		body.classList.remove("--stop");
+	}
+}
+;
+  AOS.init({
+  	duration: 2400,
+  }
+ );
