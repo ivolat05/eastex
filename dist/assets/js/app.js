@@ -303,28 +303,46 @@ function baner() {
 }
 baner();
 
-  AOS.init({
-  	duration: 2400,
-  }
- );
+function geografySwiperBlock() {
+	const geografyWrapp = document.querySelector(".geography__swiper");
+	const geografyInstall = {
+		slidesPerView: 1,
+		spaceBetween: 22,
+		loop: true,
+		autoplay: {
+			delay: 4000,
+		},
 
- const startAnim=document.querySelector('.start');
-const finishAnim=document.querySelector('.finish');
-const imgAnim=document.querySelector('.block-svg')
-if(startAnim && finishAnim && imgAnim){
-const tl = gsap.timeline({
-	scrollTrigger: {
-	  scrub: 1,
-	  pin: true,
-	  trigger: startAnim,
-	  start: "bottom bottom",
-	  endTrigger: ".finish",
-	  end: "bottom bottom",
-	},
-  });
-
-  tl.to(imgAnim, {
-	translateY:'-100%',
-  });
-
+		autoHeight: true,
+	};
+	if (geografyWrapp) {
+		const geografySwiper = new Swiper(geografyWrapp, geografyInstall);
+	}
 }
+geografySwiperBlock();
+
+AOS.init({
+	duration: 2400,
+});
+
+const startAnim = document.querySelector(".start");
+const finishAnim = document.querySelector(".finish");
+const imgAnim = document.querySelector(".block-svg");
+if (startAnim && finishAnim && imgAnim) {
+	const tl = gsap.timeline({
+		scrollTrigger: {
+			scrub: 1,
+			pin: true,
+			trigger: startAnim,
+			start: "bottom bottom",
+			endTrigger: ".finish",
+			end: "bottom bottom",
+		},
+	});
+
+	tl.to(imgAnim, {
+		translateY: "-100%",
+	});
+}
+
+
