@@ -306,3 +306,19 @@ baner();
   	duration: 2400,
   }
  );
+
+ const tl = gsap.timeline({
+	scrollTrigger: {
+	  scrub: 1,
+	  pin: true,
+	  trigger: ".start",
+	  start: "bottom bottom",
+	  endTrigger: ".finish",
+	  end: "bottom bottom",
+	},
+  }); 
+
+  tl.to(".block-svg", {
+	translateY:'-100%',
+  });
+
