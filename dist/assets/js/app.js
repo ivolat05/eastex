@@ -289,8 +289,9 @@ function baner() {
 		spaceBetween: 7,
 		loop: true,
 		autoplay: {
-			delay: 5000,
+			delay: 4000,
 		},
+		autoHeight: true,
 		pagination: {
 			el: ".banner__swiper-pagination",
 			type: "bullets",
@@ -307,18 +308,23 @@ baner();
   }
  );
 
- const tl = gsap.timeline({
+ const startAnim=document.querySelector('.start');
+const finishAnim=document.querySelector('.finish');
+const imgAnim=document.querySelector('.block-svg')
+if(startAnim && finishAnim && imgAnim){
+const tl = gsap.timeline({
 	scrollTrigger: {
 	  scrub: 1,
 	  pin: true,
-	  trigger: ".start",
+	  trigger: startAnim,
 	  start: "bottom bottom",
 	  endTrigger: ".finish",
 	  end: "bottom bottom",
 	},
-  }); 
+  });
 
-  tl.to(".block-svg", {
+  tl.to(imgAnim, {
 	translateY:'-100%',
   });
 
+}
