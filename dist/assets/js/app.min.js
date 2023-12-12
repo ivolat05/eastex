@@ -345,4 +345,43 @@ if (startAnim && finishAnim && imgAnim) {
 	});
 }
 
+const companySwipers = () => {
+	let swiperCompanyContainer = document.querySelector(".company-swiper");
+	let instalSwiper = {
+		speed: 400,
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		autoplay: {
+			delay: 4000,
+		},
+		breakpoints: {
+			430: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			520: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			992: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			},
+			1020: {
+				slidesPerView: 5,
+				spaceBetween: 20,
+			},
+
+			1400: {
+				slidesPerView: 7,
+				spaceBetween: 20,
+			},
+		},
+	};
+	if (swiperCompanyContainer) {
+		const swiperCompany = new Swiper(swiperCompanyContainer, instalSwiper);
+	}
+};
+companySwipers();
 
