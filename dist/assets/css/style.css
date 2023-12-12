@@ -1537,6 +1537,15 @@ button {
   line-height: normal;
   text-align: center;
 }
+.title a,
+.title span {
+  color: #FFB902;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: inherit;
+}
 @media (max-width: 572px) {
   .title {
     font-size: 20px;
@@ -1555,6 +1564,15 @@ button {
   .text {
     font-size: 12px;
   }
+}
+.text a,
+.text span {
+  color: #FFB902;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: inherit;
 }
 
 header {
@@ -4774,5 +4792,108 @@ header {
   .automate__box-4 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
+  }
+}
+
+.features {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.features__wrapp-title {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 35px;
+}
+@media (max-width: 572px) {
+  .features__wrapp-title {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+
+.features__list-inner {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 17px;
+}
+.features__list-inner::after {
+  content: "";
+  position: absolute;
+  background: url("../../assets/img/check.svg") no-repeat center center;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+}
+@media (max-width: 572px) {
+  .features__list-inner::after {
+    width: 12px;
+    height: 12px;
+  }
+}
+.features__list-inner span {
+  font-family: "Lalezar";
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+@media (max-width: 572px) {
+  .features__list-inner {
+    font-size: 12px;
+  }
+}
+
+.features__wrapp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 440px 1fr;
+  grid-template-columns: 440px 1fr;
+  gap: 45px;
+  padding-top: 23px;
+  padding-left: 108px;
+  padding-right: 68px;
+}
+@media (max-width: 1400px) {
+  .features__wrapp {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 25px;
+  }
+}
+@media (max-width: 900px) {
+  .features__wrapp {
+    -ms-grid-columns: 300px 1fr;
+    grid-template-columns: 300px 1fr;
+  }
+}
+@media (max-width: 660px) {
+  .features__wrapp {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+}
+
+.features__wrapp-img {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.features-text {
+  padding-top: 15px;
+}
+@media (max-width: 572px) {
+  .features-text {
+    padding-top: 10px;
   }
 }
