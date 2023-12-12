@@ -4897,3 +4897,206 @@ header {
     padding-top: 10px;
   }
 }
+
+.awards__wrapp {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 50px;
+  padding-top: 33px;
+}
+@media (max-width: 1400px) {
+  .awards__wrapp {
+    gap: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .awards__wrapp {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 572px) {
+  .awards__wrapp {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+}
+
+.awards {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.awards-text {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 10px;
+}
+@media (max-width: 572px) {
+  .awards-text {
+    font-size: 11px;
+  }
+}
+
+.awards__box {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  height: 215px;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  isolation: isolate;
+}
+.awards__box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+.awards__box::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+}
+.awards__box::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+}
+.awards__box:hover::before {
+  background: rgba(0, 0, 0, 0.56);
+}
+.awards__box:hover::after {
+  opacity: 0;
+}
+.awards__box:hover .awards__box-title {
+  margin-top: 0;
+  margin-bottom: auto;
+}
+.awards__box:hover .awards__box-wrapp {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  position: static;
+}
+
+.awards__box-title {
+  text-align: center;
+  color: #F3B209;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+@media (max-width: 572px) {
+  .awards__box-title {
+    font-size: 14px;
+  }
+}
+
+.awards__box-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  -webkit-transform: translateY(110%);
+      -ms-transform: translateY(110%);
+          transform: translateY(110%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  position: static;
+}
+
+.awards__box-title {
+  margin-top: auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+.awards__box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.awards__box-text {
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  margin-bottom: auto;
+  margin-top: 0;
+}
+@media (max-width: 572px) {
+  .awards__box-text {
+    font-size: 11px;
+  }
+}
+
+.awards__btn {
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 5px;
+  color: #F3B209;
+}
