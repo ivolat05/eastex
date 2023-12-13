@@ -34,6 +34,7 @@
 		<main>
 			<header class="header">
 	<div class="header__wrapper">
+		<!--
 		<div class="header__mobile-top">
 			<a href="#" class="header__mobil-link">
 				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
@@ -72,7 +73,7 @@
 					</defs>
 				</svg>
 			</button>
-		</div>
+		</div>-->
 		<div class="header-mobil-wrapper">
 			<div class="header-content">
 				<div class="header-logo">
@@ -90,34 +91,62 @@
 						</div>
 						<div class="header__nav-top-about">
 							<div class="header__nav-top-about-mail">
-								<a href="mailto:info@eastex.ru">info@eastex.ru</a>
-								<span>Пн.-Пт.: с 09:00 до 18:00 </span>
+								<a href="mailto:info@eastex.ru"><img class="header__mess-icon"
+										src="assets/img/mail-box.svg" alt=""> info@eastex.ru</a>
+								<span><img class="header__mess-icon" src="assets/img/clock.png" alt=""> Пн.-Пт.: с
+									09:00 до 18:00 </span>
 							</div>
 							<div class="header__nav-top-about-tels">
-								<div class="header__sity-mobile">г. Москва</div>
-								<a href="tel:+74951865463">+7 (495) 186-54-63</a>
-								<div class="header__sity-mobile">г. Владивосток</div>
-								<a href="tel:++74235409363">+7 (423) 540-93-63</a>
+
+								<a href="tel:+74951865463">+7 (495) 186-54-63 <span class="header__sity-mobile">г.
+										Москва
+									</span></a>
+
+								<a href="tel:++74235409363">+7 (423) 540-93-63 <span class="header__sity-mobile">г.
+										Владивосток</span></a>
 							</div>
-							<div class="header__nav-top-about-cities">
-								<p>г. Москва</p>
-								<p>г. Владивосток</p>
-							</div>
+
 						</div>
 					</div>
 					<div class="header__nav-bottom">
 						<ul>
-							<li><a href="">Почему мы</a></li>
-							<li><a href="" class="--active">Отрасли</a></li>
-							<li><a href="">Таможенное оформление</a></li>
-							<li><a href="">Перевозки</a></li>
-							<li><a href="">Услуги</a></li>
-							<li><a href="">Контакты</a></li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Почему мы
+									</span>
+								</a></li>
+							<li><a href="#" class="header__nav-link --active">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Отрасли
+									</span>
+								</a></li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Таможенное оформление
+									</span>
+								</a></li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Перевозки
+									</span>
+								</a></li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Услуги
+									</span>
+								</a></li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Контакты
+									</span>
+								</a></li>
 						</ul>
-						<div class="header-login-feedback-mob  header__close-btn header-login-feedback">
-							<button data-open-modal="modal-form"><span>Отправить заявку</span><img
-									src="assets/img/tables.gif" alt=""></button>
-						</div>
 
 					</div>
 				</div>
@@ -130,11 +159,14 @@
 						<button data-open-modal="modal-form"><span>Отправить заявку</span><img
 								src="assets/img/tables.gif" alt=""></button>
 					</div>
-					<button class="header__close header__close-btn">
-						<span class="header__close-line">
-						</span>
-						<span class="header__close-line"></span>
-					</button>
+					<div class="header__close-coll">
+						<button data-open-modal="modal-form" class="header__close-btn header__mob-tell">
+							<img src="assets/img/tell-head.svg" alt="">
+						</button>
+						<button class="header__close header__close-btn">
+							<img src="assets/img/close.png" alt="">
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -143,68 +175,24 @@
 <div class="header__mobile-menu">
 	<div class="header__mobile-mneu-coll">
 		<a href="#" class="header__mobile-menu-link">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-				<g clip-path="url(#clip0_93_151)">
-					<path
-						d="M21.005 3.5C20.6296 2.47523 19.949 1.59024 19.0549 0.964389C18.1609 0.338539 17.0964 0.00194216 16.005 0L7.992 0C6.90201 0.00357573 5.83928 0.340932 4.94679 0.966672C4.05431 1.59241 3.3749 2.47651 3 3.5L0.416 10.59C0.140524 11.3477 -0.000265285 12.1478 3.75259e-07 12.954V15.682C0.00306555 16.6774 0.285994 17.6518 0.816474 18.494C1.34695 19.3362 2.1036 20.0123 3 20.445V22C3 22.5304 3.21071 23.0391 3.58579 23.4142C3.96086 23.7893 4.46957 24 5 24C5.53043 24 6.03914 23.7893 6.41421 23.4142C6.78929 23.0391 7 22.5304 7 22V21H17V22C17 22.5304 17.2107 23.0391 17.5858 23.4142C17.9609 23.7893 18.4696 24 19 24C19.5304 24 20.0391 23.7893 20.4142 23.4142C20.7893 23.0391 21 22.5304 21 22V20.445C21.8964 20.0123 22.653 19.3362 23.1835 18.494C23.714 17.6518 23.9969 16.6774 24 15.682V12.954C24.0003 12.1478 23.8595 11.3477 23.584 10.59L21.005 3.5ZM5.813 4.526C5.97672 4.07944 6.27335 3.69377 6.66294 3.42093C7.05253 3.14809 7.51637 3.00118 7.992 3H16.008C16.4836 3.00118 16.9475 3.14809 17.3371 3.42093C17.7267 3.69377 18.0233 4.07944 18.187 4.526L20.54 11H3.46L5.813 4.526ZM18.682 18H5.318C4.70347 17.9992 4.11434 17.7547 3.6798 17.3202C3.24527 16.8857 3.00079 16.2965 3 15.682V14H5V14.5C5 14.8978 5.15804 15.2794 5.43934 15.5607C5.72064 15.842 6.10218 16 6.5 16C6.89783 16 7.27936 15.842 7.56066 15.5607C7.84197 15.2794 8 14.8978 8 14.5V14H16V14.5C16 14.8978 16.158 15.2794 16.4393 15.5607C16.7206 15.842 17.1022 16 17.5 16C17.8978 16 18.2794 15.842 18.5607 15.5607C18.842 15.2794 19 14.8978 19 14.5V14H21V15.682C20.9992 16.2965 20.7547 16.8857 20.3202 17.3202C19.8857 17.7547 19.2965 17.9992 18.682 18Z"
-						fill="#374957" />
-				</g>
-				<defs>
-					<clipPath id="clip0_93_151">
-						<rect width="24" height="24" fill="white" />
-					</clipPath>
-				</defs>
-			</svg>
+			<img src="assets/img/header__mobile-1.svg" alt="">
 			Перевозки
 		</a>
 		<a href="#" class="header__mobile-menu-link">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-				<g clip-path="url(#clip0_93_146)">
-					<path
-						d="M7 10H17V13H7V10ZM7 18H14V15H7V18ZM22 5.879V24H2V3C2 2.20435 2.31607 1.44129 2.87868 0.87868C3.44129 0.31607 4.20435 0 5 0L16.121 0L22 5.879ZM19 21V8H14V3H5V21H19Z"
-						fill="#374957" />
-				</g>
-				<defs>
-					<clipPath id="clip0_93_146">
-						<rect width="24" height="24" fill="white" />
-					</clipPath>
-				</defs>
-			</svg>
+			<img src="assets/img/header__mobile-2.svg" alt="">
 			Брокер
 		</a>
 	</div>
-	<a href="#" class="header__menu-mobil-logo">
-		<img class="header-logo-table" src="assets/img/logo-desc.png" alt="">
-	</a>
+	<button class="header__menu-mobil-logo header__open-btn">
+		<img class="header-logo-table" src="assets/img/logo-mob.svg" alt="">
+	</button>
 	<div class="header__mobile-mneu-coll">
 		<a href="#" class="header__mobile-menu-link">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-				<g clip-path="url(#clip0_93_147)">
-					<path
-						d="M10 8.00014C10 7.60458 10.1173 7.2179 10.3371 6.889C10.5568 6.5601 10.8692 6.30376 11.2346 6.15238C11.6001 6.001 12.0022 5.9614 12.3902 6.03857C12.7781 6.11574 13.1345 6.30622 13.4142 6.58593C13.6939 6.86563 13.8844 7.222 13.9616 7.60996C14.0387 7.99792 13.9991 8.40005 13.8478 8.76551C13.6964 9.13096 13.44 9.44332 13.1111 9.66308C12.7822 9.88284 12.3956 10.0001 12 10.0001C11.4696 10.0001 10.9609 9.78943 10.5858 9.41435C10.2107 9.03928 10 8.53057 10 8.00014ZM7.97 24.0601L0 21.6081V12.0001C0.000480045 11.4958 0.109945 10.9975 0.3209 10.5395C0.531854 10.0814 0.839315 9.67429 1.22223 9.34607C1.60514 9.01786 2.05446 8.77628 2.53943 8.63787C3.02439 8.49945 3.53353 8.46748 4.032 8.54414C3.9534 7.40708 4.11891 6.26637 4.51744 5.19854C4.91596 4.13071 5.53828 3.16048 6.34263 2.35295C7.14697 1.54542 8.11474 0.919279 9.18098 0.516538C10.2472 0.113798 11.3873 -0.0562211 12.5246 0.0178903C13.662 0.0920017 14.7703 0.408529 15.7753 0.946231C16.7803 1.48393 17.6586 2.23037 18.3514 3.13545C19.0441 4.04053 19.5352 5.08332 19.7918 6.19384C20.0484 7.30435 20.0645 8.4569 19.839 9.57414L21.525 10.1381C22.2417 10.3565 22.8693 10.7996 23.3149 11.4019C23.7606 12.0042 24.0008 12.7339 24 13.4831V24.1141L15.517 22.0481L7.97 24.0601ZM8.464 11.5361L12 14.9931L15.547 11.5241C16.2434 10.823 16.7164 9.93128 16.9063 8.96151C17.0962 7.99175 16.9945 6.98745 16.614 6.07545C16.2336 5.16345 15.5914 4.38464 14.7686 3.83737C13.9458 3.29011 12.9792 2.99892 11.9911 3.0006C11.0029 3.00227 10.0373 3.29673 9.21639 3.84678C8.39544 4.39683 7.75589 5.17781 7.3785 6.0911C7.00111 7.00438 6.90281 8.00902 7.09601 8.97814C7.28921 9.94725 7.76524 10.8374 8.464 11.5361V11.5361ZM3 19.3921L8.03 20.9391L15.483 18.9521L21 20.3001V13.4831C20.9999 13.3747 20.9645 13.2692 20.8992 13.1827C20.8339 13.0961 20.7422 13.0331 20.638 13.0031L18.707 12.3581C18.4032 12.8268 18.0513 13.2625 17.657 13.6581L12 19.1891L6.355 13.6681C5.87632 13.1861 5.46097 12.6451 5.119 12.0581L3.76 11.5671C3.67662 11.5232 3.58318 11.5018 3.48897 11.5051C3.39476 11.5084 3.30306 11.5364 3.223 11.5861C3.15403 11.6308 3.09745 11.6922 3.05847 11.7646C3.01949 11.8369 2.99938 11.918 3 12.0001V19.3921Z"
-						fill="#374957" />
-				</g>
-				<defs>
-					<clipPath id="clip0_93_147">
-						<rect width="24" height="24" fill="white" />
-					</clipPath>
-				</defs>
-			</svg>
+			<img src="assets/img/header__mobile-3.svg" alt="">
 			Контакты
 		</a>
 		<a href="#" class="header__mobile-menu-link">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-				<g clip-path="url(#clip0_93_154)">
-					<path
-						d="M21 1.00049H3C2.20435 1.00049 1.44129 1.31656 0.87868 1.87917C0.31607 2.44178 0 3.20484 0 4.00049L0 23.0005H24V4.00049C24 3.20484 23.6839 2.44178 23.1213 1.87917C22.5587 1.31656 21.7956 1.00049 21 1.00049V1.00049ZM20.774 4.00049L13.639 11.1355C13.1975 11.5572 12.6105 11.7924 12 11.7924C11.3895 11.7924 10.8025 11.5572 10.361 11.1355L3.226 4.00049H20.774ZM3 20.0005V8.01749L8.239 13.2565C8.73276 13.7505 9.319 14.1423 9.96424 14.4097C10.6095 14.677 11.3011 14.8146 11.9995 14.8146C12.6979 14.8146 13.3895 14.677 14.0348 14.4097C14.68 14.1423 15.2662 13.7505 15.76 13.2565L21 8.01749V20.0005H3Z"
-						fill="#374957" />
-				</g>
-				<defs>
-					<clipPath id="clip0_93_154">
-						<rect width="24" height="24" fill="white" />
-					</clipPath>
-				</defs>
-			</svg>
+			<img src="assets/img/header__mobile-4.svg" alt="">
 			Запрос
 		</a>
 	</div>
