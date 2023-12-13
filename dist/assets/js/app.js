@@ -281,6 +281,154 @@ function closeMenu(menu, body) {
 		body.classList.remove("--stop");
 	}
 }
+
+function subMenu() {
+	const btn = document.querySelectorAll(".header__button");
+	const menu = document.querySelector(".header__heand");
+	const tab = document.querySelectorAll(".heaader__heand-tab");
+	if (btn) {
+		btn.forEach((item) => {
+			item.addEventListener("click", () => {
+				if (window.innerWidth <= 992) {
+					if (item.classList.contains("--btn-active")) {
+						removeActive(btn);
+						removeSubMenu(menu);
+					} else {
+						removeActive(btn);
+
+						tabRemove(tab);
+						addTabActive(item, "data-tab-one");
+						activeSubMenu(menu);
+					}
+				}
+			});
+			item.addEventListener("mouseover", () => {
+				if (window.innerWidth >= 992) {
+					tabRemove(tab);
+					addTabActive(item, "data-tab-one");
+					activeSubMenu(menu);
+				}
+			});
+			item.addEventListener("mouseout", () => {
+				if (window.innerWidth >= 992) {
+					removeActive(btn);
+					removeSubMenu(menu);
+				}
+			});
+		});
+
+		menu.addEventListener("mouseover", () => {
+			if (window.innerWidth >= 992) {
+				activeSubMenu(menu);
+			}
+		});
+		menu.addEventListener("mouseout", () => {
+			if (window.innerWidth >= 992) {
+				removeSubMenu(menu);
+			}
+		});
+	}
+}
+subMenu();
+
+function addTabActive(item, dataTab) {
+	item.classList.add("--btn-active");
+	let attr = item.getAttribute(dataTab);
+
+	let id = document.getElementById(attr);
+	id.classList.add("--active");
+}
+function removeActive(btn) {
+	btn.forEach((item) => {
+		item.classList.remove("--btn-active");
+	});
+}
+
+function activeSubMenu(menu) {
+	if (menu) {
+		menu.classList.add("--active");
+	}
+}
+function removeSubMenu(menu) {
+	if (menu) {
+		menu.classList.remove("--active");
+	}
+}
+function tabRemove(tab) {
+	if (tab) {
+		tab.forEach((item) => {
+			item.classList.remove("--active");
+		});
+	}
+}
+
+function removeBlock() {
+	const btn = document.querySelectorAll(".btn-remove-block");
+	if (btn) {
+		btn.forEach((item) => {
+			item.addEventListener("click", () => {
+				let block = item.closest(".--active");
+				let atrrBtn = item.getAttribute("data-remove-btn");
+				let btnAll = document.querySelectorAll(`.${atrrBtn}`);
+				if (block) {
+					block.classList.remove("--active");
+				}
+				if (btnAll) {
+					btnAll.forEach((item) => {
+						item.classList.remove("--btn-active");
+					});
+				}
+			});
+		});
+	}
+}
+removeBlock();
+
+function openItemMenu() {
+	let btn = document.querySelectorAll(".submenu-btn");
+	let tab = document.querySelectorAll(".header__hend-subtab");
+
+	if (btn) {
+		btn.forEach((item) => {
+			item.addEventListener("click", () => {
+				if (window.innerWidth <= 992) {
+					if (item.classList.contains("--btn-active")) {
+						removeActive(btn);
+						removeSubMenu(menu);
+					} else {
+						tabRemove(tab);
+						addTabActive(item, "data-tab-sumenu");
+					}
+				}
+			});
+			item.addEventListener("mouseover", () => {
+				if (window.innerWidth >= 992) {
+					tabRemove(tab);
+					addTabActive(item, "data-tab-sumenu");
+				}
+			});
+			item.addEventListener("mouseout", () => {
+				if (window.innerWidth >= 992) {
+					tabRemove(tab);
+					removeActive(btn);
+				}
+			});
+		});
+		tab.forEach((menu) => {
+			menu.addEventListener("mouseover", () => {
+				if (window.innerWidth >= 992) {
+					activeSubMenu(menu);
+				}
+			});
+			menu.addEventListener("mouseout", () => {
+				if (window.innerWidth >= 992) {
+					removeSubMenu(menu);
+				}
+			});
+		});
+	}
+}
+openItemMenu();
 ;
 function baner() {
 	const bannerWrapp = document.querySelector(".banners__swiper");
@@ -384,4 +532,25 @@ const companySwipers = () => {
 	}
 };
 companySwipers();
+
+function headerSwiper() {
+	const headerWrapp = document.querySelector(".header__head-swiper");
+	const headerInstall = {
+		slidesPerView: 1,
+		spaceBetween: 15,
+		loop: true,
+		autoplay: {
+			delay: 4000,
+		},
+		autoHeight: true,
+		pagination: {
+			el: ".header__swiper-pagination",
+			type: "bullets",
+		},
+	};
+	if (headerWrapp) {
+		const headerSwipers = new Swiper(headerWrapp, headerInstall);
+	}
+}
+headerSwiper();
 
