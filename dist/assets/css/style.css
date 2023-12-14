@@ -1661,12 +1661,34 @@ header {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
 }
 
 .header__nav-top-about-mail span {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
 }
 
 .header__nav-top-about-tels {
@@ -1727,7 +1749,7 @@ header {
   color: #000;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -1754,7 +1776,6 @@ header {
 }
 
 .header-login {
-  padding-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1763,6 +1784,10 @@ header {
       -ms-flex-flow: column;
           flex-flow: column;
   row-gap: 20px;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__login-login {
@@ -1972,10 +1997,6 @@ header {
     display: none;
   }
 }
-.header__mess-icon {
-  display: none;
-}
-
 .header__nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2005,9 +2026,6 @@ header {
 }
 
 @media (max-width: 992px) {
-  .header__mess-icon {
-    display: block;
-  }
   .header__mob-tell {
     margin-right: 50px;
   }
@@ -2362,6 +2380,16 @@ header {
   }
 }
 
+.header__head-swiper-line {
+  border-left: 1px solid #FFB902;
+  padding-left: 50px;
+}
+@media (max-width: 992px) {
+  .header__head-swiper-line {
+    display: none;
+  }
+}
+
 .header__head-swiper {
   padding-left: 10px;
   padding-right: 10px;
@@ -2561,7 +2589,7 @@ header {
   color: #000;
   font-size: 17px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 @media (max-width: 992px) {
@@ -2654,7 +2682,6 @@ header {
 .header__hend-subtab {
   display: none;
   border-left: 1px solid #FFB902;
-  border-right: 1px solid #FFB902;
 }
 @media (max-width: 992px) {
   .header__hend-subtab {
@@ -2800,6 +2827,13 @@ header {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+@media (max-width: 880px) {
+  .general-map {
+    -webkit-transform: translate(-65%, 0);
+        -ms-transform: translate(-65%, 0);
+            transform: translate(-65%, 0);
+  }
 }
 
 .general-content {
@@ -4851,10 +4885,13 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 @media (max-width: 992px) {
   .banner__swiper-item {
@@ -4873,6 +4910,9 @@ header {
   background: -webkit-gradient(linear, left bottom, left top, from(#000), to(rgba(0, 0, 0, 0)));
   background: -o-linear-gradient(bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: -1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .banners-title {
