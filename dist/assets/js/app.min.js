@@ -576,3 +576,97 @@ function fixedMenu() {
 }
 fixedMenu();
 
+const accordion = () => {
+	const btn = document.querySelectorAll(".accordion-btn");
+	if (btn) {
+		btn.forEach((item) => {
+			let accordionWrapp = item.closest(".accordion");
+			if (item.classList.contains("active")) {
+				accordionActive(accordionWrapp);
+			}
+			item.addEventListener("click", () => {
+				item.classList.toggle("active");
+				accordionActive(accordionWrapp);
+			});
+		});
+	}
+};
+accordion();
+
+function accordionActive(accordionWrapp) {
+	if (accordionWrapp) {
+		let panel = accordionWrapp.querySelector(".accordion__body");
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	}
+}
+
+const newsSwiper = () => {
+	let swiperNewsContainer = document.querySelector(".slaid-news-slaider");
+	let instalSwiper = {
+		speed: 400,
+		slidesPerView: 4,
+		spaceBetween: 10,
+		autoplay: {
+			delay: 4000,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			572: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			782: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			1240: {
+				slidesPerView: 4,
+				spaceBetween: 10,
+			},
+		},
+	};
+	if (swiperNewsContainer) {
+		const swiperNews = new Swiper(swiperNewsContainer, instalSwiper);
+	}
+};
+newsSwiper();
+
+const articlesSwiper = () => {
+	const articleSwiperTop = document.querySelector(
+		".article__cases-swiper-top"
+	);
+	const articleSwiperBottom = document.querySelector(
+		".article__cases-swiper-bottom"
+	);
+
+	const articleBottomInstall = {
+		spaceBetween: 15,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+	};
+	if (articleSwiperTop && articleSwiperBottom) {
+		const swiperBottom = new Swiper(
+			articleSwiperBottom,
+			articleBottomInstall
+		);
+		const swiperTop = new Swiper(articleSwiperTop, {
+			spaceBetween: 10,
+			thumbs: {
+				swiper: swiperBottom,
+			},
+			autoplay: {
+				delay: 4000,
+			},
+		});
+	}
+};
+articlesSwiper();
+
