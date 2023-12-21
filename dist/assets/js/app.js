@@ -523,7 +523,7 @@ const companySwipers = () => {
 
 			1400: {
 				slidesPerView: 7,
-				spaceBetween: 20,
+				spaceBetween: 62,
 			},
 		},
 	};
@@ -563,18 +563,42 @@ function fixedMenu() {
 		const mainHeigth = main.offsetTop;
 		window.addEventListener("scroll", () => {
 			let scrollDistance = window.scrollY;
-
-			if (scrollDistance >= mainHeigth) {
-				header.classList.add("header-fixed");
-				main.style.marginTop = `${headerHeigth}px`;
+			if (window.innerWidth >= 992) {
+				addFixedClass(
+					scrollDistance,
+					mainHeigth,
+					header,
+					main,
+					headerHeigth
+				);
 			} else {
-				header.classList.remove("header-fixed");
-				main.style.marginTop = null;
+				addFixedClass(
+					scrollDistance,
+					mainHeigth + 300,
+					header,
+					main,
+					headerHeigth
+				);
 			}
 		});
 	}
 }
 fixedMenu();
+
+function addFixedClass(scrollDistance, mainHeigth, header, main, headerHeigth) {
+	console.log(mainHeigth);
+	if (scrollDistance >= mainHeigth) {
+		header.classList.add("header-fixed");
+		if (window.innerWidth >= 992) {
+			main.style.marginTop = `${headerHeigth}px`;
+		}
+	} else {
+		header.classList.remove("header-fixed");
+		if (window.innerWidth >= 992) {
+			main.style.marginTop = null;
+		}
+	}
+}
 
 const accordion = () => {
 	const btn = document.querySelectorAll(".accordion-btn");
@@ -669,4 +693,45 @@ const articlesSwiper = () => {
 	}
 };
 articlesSwiper();
+
+const awardsSwipers = () => {
+	let swiperAwardsContainer = document.querySelector(".awards__swiper");
+
+	let instalSwip = {
+		speed: 400,
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		autoplay: {
+			delay: 4000,
+		},
+		breakpoints: {
+			430: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+			520: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1020: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			},
+
+			1400: {
+				slidesPerView: 4,
+				spaceBetween: 62,
+			},
+		},
+	};
+	if (swiperAwardsContainer) {
+		const swiperAwards = new Swiper(swiperAwardsContainer, instalSwip);
+	}
+};
+awardsSwipers();
 
