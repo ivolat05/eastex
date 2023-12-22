@@ -735,3 +735,84 @@ const awardsSwipers = () => {
 };
 awardsSwipers();
 
+const deliverySwipers = () => {
+	let swiperDeliveryContainer = document.querySelector(".delivery-swiper");
+	let instalSwiper = {
+		speed: 400,
+		slidesPerView: 3,
+		spaceBetween: 15,
+		autoplay: {
+			delay: 5000,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+			},
+			572: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+			},
+			900: {
+				slidesPerView: 3,
+				spaceBetween: 15,
+			},
+			1240: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			},
+
+			1400: {
+				slidesPerView: 4,
+				spaceBetween: 40,
+			},
+		},
+	};
+	if (swiperDeliveryContainer) {
+		const swiperDelivery = new Swiper(
+			swiperDeliveryContainer,
+			instalSwiper
+		);
+	}
+};
+deliverySwipers();
+
+const startSwipers = () => {
+	let swiperStartContainer = document.querySelector(".start__swiper");
+	let instalSwiper = {
+		speed: 400,
+		slidesPerView: 3,
+		spaceBetween: 15,
+		autoplay: {
+			delay: 5000,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+			},
+			572: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+			},
+			900: {
+				slidesPerView: 3,
+				spaceBetween: 15,
+			},
+			1240: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			},
+
+			1400: {
+				slidesPerView: 4,
+				spaceBetween: 40,
+			},
+		},
+	};
+	if (swiperStartContainer) {
+		const swiperStart = new Swiper(swiperStartContainer, instalSwiper);
+	}
+};
+startSwipers();
+
