@@ -12682,20 +12682,24 @@
 			<h3>Офисы компании</h3>
 			<div class="premap-container --scroll">
 				<label class="   label">
-					<input checked name="map" class="tab-input premap-item-item label-input" type="radio"
-						data-tab="map-1">
+					<!--data-coordinat-num указывает на какую координату переклюситься отсчет идет от 0-->
+					<!--упровления картой происходит в функции  initIndexMap -->
+					<input checked name="map" class="tab-input premap-item-item label-input map-input-switch"
+						type="radio" data-tab="map-1" data-coordinat-num="0">
 					<span class="tab-input-span premap-item label-input-span">
 						Москва
 					</span>
 				</label>
 				<label class="   label">
-					<input name="map" class="tab-input premap-item-item label-input" type="radio" data-tab="map-2">
+					<input name="map" class="tab-input premap-item-item label-input map-input-switch" type="radio"
+						data-tab="map-2" data-coordinat-num="1">
 					<span class="tab-input-span premap-item label-input-span">
 						Владивосток
 					</span>
 				</label>
 				<label class="   label">
-					<input name="map" class="tab-input premap-item-item label-input" type="radio" data-tab="map-3">
+					<input name="map" class="tab-input premap-item-item label-input map-input-switch" type="radio"
+						data-tab="map-3" data-coordinat-num="2">
 					<span class="tab-input-span premap-item label-input-span">
 						Шанхай
 					</span>
@@ -12703,8 +12707,10 @@
 			</div>
 		</div>
 	</section>
-	<div id="map-1" class="tab   map__wrapper">
-		<div class="map__wrapp-row">
+
+
+	<div class=" map__wrapper">
+		<div id="map-1" class="tab map__wrapp-row">
 			<div class="wrapper map__wrapp-row-wrapper">
 				<div class="map__babel">
 					<a href="tel:+74951865463" class="map__babel-link">
@@ -12730,13 +12736,8 @@
 				</div>
 			</div>
 		</div>
-		<iframe class="map"
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae955f891c7ddd4aeb3a8327545236bca434fe057821a0b026d703c1b00bf7a2f&amp;source=constructor"
-			width="100%" height="400" frameborder="0"></iframe>
 
-	</div>
-	<div id="map-2" class="tab map__wrapper">
-		<div class="map__wrapp-row">
+		<div id="map-2" class="tab  map__wrapp-row">
 			<div class="wrapper map__wrapp-row-wrapper">
 				<div class="map__babel">
 					<a href="tel:+74951865463" class="map__babel-link">
@@ -12755,21 +12756,14 @@
 					<div class="map__babel-text">
 						<img src="assets/img/marker-new.png" alt="">
 						<span>
-							125040, г. Москва 3-я улица Ямского поля д. 2, корп. 12, офис 510
+							Владивосток
 						</span>
 
 					</div>
 				</div>
 			</div>
 		</div>
-		<iframe class="map"
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3A5e8e17caed57de554b3fb31fa4a323e9a731c92f4f5794764e32aaebb47efd98&amp;source=constructor"
-			width="100%" height="400" frameborder="0"></iframe>
-
-	</div>
-
-	<div id="map-3" class="tab map__wrapper">
-		<div class="map__wrapp-row">
+		<div id="map-3" class="tab  map__wrapp-row">
 			<div class="wrapper map__wrapp-row-wrapper">
 				<div class="map__babel">
 					<a href="tel:+74951865463" class="map__babel-link">
@@ -12788,17 +12782,15 @@
 					<div class="map__babel-text">
 						<img src="assets/img/marker-new.png" alt="">
 						<span>
-							125040, г. Москва 3-я улица Ямского поля д. 2, корп. 12, офис 510
+							Шанхай
 						</span>
 
 					</div>
 				</div>
 			</div>
 		</div>
-		<iframe class="map"
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae955f891c7ddd4aeb3a8327545236bca434fe057821a0b026d703c1b00bf7a2f&amp;source=constructor"
-			width="100%" height="400" frameborder="0"></iframe>
 
+		<div id="map-index" class="map"></div>
 	</div>
 </div>
 			<section class="blocks">
@@ -13148,6 +13140,9 @@
 	</form>
 </div>
 	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=f400ed64-dab5-4bd5-baf6-fe9e2ea70c98&lang=ru_RU"
+		type="text/javascript">
+		</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
