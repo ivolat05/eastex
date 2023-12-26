@@ -1176,3 +1176,43 @@ const postsSwiper = () => {
 };
 postsSwiper();
 
+function priceSwiper() {
+	const priceWrapp = document.querySelector(".price__swiper");
+	const priceInstall = {
+		slidesPerView: 3,
+		spaceBetween: 75,
+
+		autoHeight: true,
+		pagination: {
+			el: ".price__swiper-pagination",
+			type: "bullets",
+		},
+		breakpoints: {
+			200: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+				autoHeight: true,
+			},
+			772: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+				autoHeight: true,
+			},
+
+			1100: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+
+			1400: {
+				slidesPerView: 3,
+				spaceBetween: 75,
+			},
+		},
+	};
+	if (priceWrapp) {
+		const priceSwipers = new Swiper(priceWrapp, priceInstall);
+	}
+}
+priceSwiper();
+
