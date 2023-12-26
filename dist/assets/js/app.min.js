@@ -609,8 +609,15 @@ const accordion = () => {
 				accordionActive(accordionWrapp);
 			}
 			item.addEventListener("click", () => {
-				item.classList.toggle("active");
-				accordionActive(accordionWrapp);
+				if (item.classList.contains("active")) {
+					removeActiveAcc(item);
+				} else {
+					btn.forEach((item) => {
+						removeActiveAcc(item);
+					});
+					item.classList.add("active");
+					accordionActive(accordionWrapp);
+				}
 			});
 		});
 	}
@@ -626,6 +633,13 @@ function accordionActive(accordionWrapp) {
 			panel.style.maxHeight = panel.scrollHeight + "px";
 		}
 	}
+}
+
+function removeActiveAcc(item) {
+	item.classList.remove("active");
+	let accordionWrapp = item.closest(".accordion");
+	let panel = accordionWrapp.querySelector(".accordion__body");
+	panel.style.maxHeight = null;
 }
 
 const newsSwiper = () => {
