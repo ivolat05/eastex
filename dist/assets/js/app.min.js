@@ -1158,3 +1158,21 @@ function activeMap(input, map, colectionList) {
 	map.setCenter(colectionList[numCoordinat].coordinates);
 }
 
+const postsSwiper = () => {
+	let swiperPostsContainer = document.querySelector(".posts__swiper");
+	let instalSwiper = {
+		spaceBetween: 70,
+		slidesPerView: "auto",
+		freeMode: true,
+		scrollbar: {
+			el: ".posts__swiper-scrollbar",
+		},
+		watchSlidesProgress: true,
+		mousewheel: true,
+	};
+	if (swiperPostsContainer) {
+		const swiperPosts = new Swiper(swiperPostsContainer, instalSwiper);
+	}
+};
+postsSwiper();
+
