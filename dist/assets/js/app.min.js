@@ -830,16 +830,18 @@ const startSwipers = () => {
 };
 startSwipers();
 
-ymaps.ready(init);
+let idPreseceMap = document.getElementById("presence-map");
+if (idPreseceMap) {
+	ymaps.ready(init);
 
-function init() {
-	let idPreseceMap = document.getElementById("presence-map");
-	// координаты, названия городов, содержимое баллунов
-	let colectionList = [
-		{
-			coordinates: [55.755811, 37.617617],
-			name: "Москва",
-			ballon: `
+	function init() {
+		let idPreseceMap = document.getElementById("presence-map");
+		// координаты, названия городов, содержимое баллунов
+		let colectionList = [
+			{
+				coordinates: [55.755811, 37.617617],
+				name: "Москва",
+				ballon: `
                 <div class="presence__ballon presence__ballon-1"    style="background: url('assets/img/city.jpg')no-repeat center center/cover;" >
                     <h3 class="presence__ballon-title">
                     Таможенные посты <br> города Москва
@@ -881,11 +883,11 @@ function init() {
                     </ul>
                 </div>
             `,
-		},
-		{
-			coordinates: [59.938784, 30.314997],
-			name: "Санкт-Петербург",
-			ballon: ` <div class="presence__ballon presence__ballon-2"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
+			},
+			{
+				coordinates: [59.938784, 30.314997],
+				name: "Санкт-Петербург",
+				ballon: ` <div class="presence__ballon presence__ballon-2"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
             <h3 class="presence__ballon-title">
             Таможенные посты <br> города Санкт-Петербург
             </h3>
@@ -911,11 +913,11 @@ function init() {
 
             </ul>
         </div>`,
-		},
-		{
-			coordinates: [55.030204, 82.92043],
-			name: "Новосибирск",
-			ballon: ` <div class="presence__ballon presence__ballon-3"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
+			},
+			{
+				coordinates: [55.030204, 82.92043],
+				name: "Новосибирск",
+				ballon: ` <div class="presence__ballon presence__ballon-3"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
             <h3 class="presence__ballon-title">
             Таможенные посты <br> города Новосибирск
             </h3>
@@ -934,12 +936,12 @@ function init() {
                 </li>
             </ul>
         </div>`,
-		},
+			},
 
-		{
-			coordinates: [56.838011, 60.597474],
-			name: "Екатеринбург",
-			ballon: ` <div class="presence__ballon presence__ballon-4"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
+			{
+				coordinates: [56.838011, 60.597474],
+				name: "Екатеринбург",
+				ballon: ` <div class="presence__ballon presence__ballon-4"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
             <h3 class="presence__ballon-title">
             Таможенные посты <br> города Екатеринбург
             </h3>
@@ -949,11 +951,11 @@ function init() {
                 </li>
             </ul>
         </div>`,
-		},
-		{
-			coordinates: [44.723771, 37.768813],
-			name: "Новороссийск ",
-			ballon: ` <div class="presence__ballon presence__ballon-5"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
+			},
+			{
+				coordinates: [44.723771, 37.768813],
+				name: "Новороссийск ",
+				ballon: ` <div class="presence__ballon presence__ballon-5"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
             <h3 class="presence__ballon-title">
             Таможенные посты <br> города Новороссийск
             </h3>
@@ -972,11 +974,11 @@ function init() {
                 </li>
             </ul>
         </div>`,
-		},
-		{
-			coordinates: [43.115542, 131.885494],
-			name: "Владивосток ",
-			ballon: ` <div class="presence__ballon presence__ballon-6"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
+			},
+			{
+				coordinates: [43.115542, 131.885494],
+				name: "Владивосток ",
+				ballon: ` <div class="presence__ballon presence__ballon-6"  style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
             <h3 class="presence__ballon-title">
             Таможенные посты <br> города Владивосток
             </h3>
@@ -995,11 +997,11 @@ function init() {
                 </li>
             </ul>
         </div>`,
-		},
-		{
-			coordinates: [31.231311, 121.470058],
-			name: "Шанхай ",
-			ballon: ` <div class="presence__ballon presence__ballon-7" style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
+			},
+			{
+				coordinates: [31.231311, 121.470058],
+				name: "Шанхай ",
+				ballon: ` <div class="presence__ballon presence__ballon-7" style="background: url('assets/img/city.jpg')no-repeat center center/cover;">
             <h3 class="presence__ballon-title">
             Таможенные посты <br> города Шанхай
             </h3>
@@ -1009,167 +1011,177 @@ function init() {
                 </li>
             </ul>
         </div>`,
-		},
-	];
-	// Создание карты.
-	if (idPreseceMap) {
-		const map = new ymaps.Map(idPreseceMap, {
-				center: [57.3523253, 75.7494733],
-				zoom: 3,
-				controls: [],
-				type: null,
-			}),
-			// создание коллекции
-			collection = new ymaps.GeoObjectCollection(null, {
-				// Опции.
-				// Необходимо указать данный тип макета.
-				iconLayout: "default#imageWithContent",
-				// Своё изображение иконки метки.
-				iconImageHref: "assets/img/pin.svg",
-				// Размеры метки.
-				iconImageSize: [30, 40],
-				// Смещение левого верхнего угла иконки относительно
-				// её "ножки" (точки привязки).
-				iconImageOffset: [-30, -40],
-				// Смещение слоя с содержимым относительно слоя с картинкой.
-				iconContentOffset: [15, 15],
-				// Макет содержимого.
-			});
-		// добовление коллекции на карту
-		for (var i = 0, l = colectionList.length; i < l; i++) {
-			collection.add(new ymaps.Placemark(colectionList[i].coordinates));
-			collection.add(
-				new ymaps.Placemark(
-					colectionList[i].coordinates,
-					{
-						balloonContent: colectionList[i].ballon,
+			},
+		];
+		// Создание карты.
+		if (idPreseceMap) {
+			const map = new ymaps.Map(idPreseceMap, {
+					center: [57.3523253, 75.7494733],
+					zoom: 3,
+					controls: [],
+					type: null,
+				}),
+				// создание коллекции
+				collection = new ymaps.GeoObjectCollection(null, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: "default#imageWithContent",
+					// Своё изображение иконки метки.
+					iconImageHref: "assets/img/pin.svg",
+					// Размеры метки.
+					iconImageSize: [30, 40],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-30, -40],
+					// Смещение слоя с содержимым относительно слоя с картинкой.
+					iconContentOffset: [15, 15],
+					// Макет содержимого.
+				});
+			// добовление коллекции на карту
+			for (var i = 0, l = colectionList.length; i < l; i++) {
+				collection.add(
+					new ymaps.Placemark(colectionList[i].coordinates)
+				);
+				collection.add(
+					new ymaps.Placemark(
+						colectionList[i].coordinates,
+						{
+							balloonContent: colectionList[i].ballon,
 
-						iconContent: `<div class='map-icon-position'>
+							iconContent: `<div class='map-icon-position'>
 										<div class='map-icon-container'>
 											${colectionList[i].name}
 										</div>
 								</div>`,
-					},
-					{ balloonOffset: [-20, -40], hideIconOnBalloonOpen: false }
-				)
-			);
-		}
+						},
+						{
+							balloonOffset: [-20, -40],
+							hideIconOnBalloonOpen: false,
+						}
+					)
+				);
+			}
 
-		map.geoObjects.add(collection);
-		map.behaviors.disable("scrollZoom");
-		map.behaviors.disable("drag");
-		map.behaviors.disable("dblClickZoom");
+			map.geoObjects.add(collection);
+			map.behaviors.disable("scrollZoom");
+			map.behaviors.disable("drag");
+			map.behaviors.disable("dblClickZoom");
 
-		//Добавляем серый фон карты
-		map.layers.add(new ymaps.Layer("assets/img/text.png"));
+			//Добавляем серый фон карты
+			map.layers.add(new ymaps.Layer("assets/img/text.png"));
 
-		//загружаем страны мира (код '001') на русском языке в стандартном качестве
-		ymaps.regions
-			.load("001", {
-				lang: "ru",
-				quality: 1,
-			})
-			.then(function (result) {
-				var regions = result.geoObjects; // ссылка на коллекцию GeoObjectCollection
+			//загружаем страны мира (код '001') на русском языке в стандартном качестве
+			ymaps.regions
+				.load("001", {
+					lang: "ru",
+					quality: 1,
+				})
+				.then(function (result) {
+					var regions = result.geoObjects; // ссылка на коллекцию GeoObjectCollection
 
-				//настраиваем дефолтный внешний вид полигонов
-				regions.options.set({
-					fillColor: "#707071",
-					strokeColor: "#525253",
-					pixelRendering: "static",
-					hasHint: false,
+					//настраиваем дефолтный внешний вид полигонов
+					regions.options.set({
+						fillColor: "#707071",
+						strokeColor: "#525253",
+						pixelRendering: "static",
+						hasHint: false,
+					});
+
+					//добавляем регионы на карту
+					map.geoObjects.add(regions);
 				});
-
-				//добавляем регионы на карту
-				map.geoObjects.add(regions);
-			});
+		}
 	}
 }
 // indexMap
+let idIndexMap = document.getElementById("map-index");
+if (idIndexMap) {
+	ymaps.ready(initIndexMap);
 
-ymaps.ready(initIndexMap);
-
-function initIndexMap() {
-	let idIndexMap = document.getElementById("map-index");
-	// координаты, названия городов, содержимое баллунов
-	let colectionList = [
-		{
-			coordinates: [55.755811, 37.617617],
-			name: "EASTEX",
-		},
-		{
-			coordinates: [43.115384, 131.878783],
-			name: "EASTEX",
-		},
-		{
-			coordinates: [-33.477669, -70.642364],
-			name: "EASTEX",
-		},
-	];
-	// Создание карты.
-	if (idIndexMap) {
-		const map = new ymaps.Map(idIndexMap, {
-				center: colectionList[0].coordinates,
-				zoom: 18,
-				controls: [],
-			}),
-			// создание коллекции
-			collection = new ymaps.GeoObjectCollection(null, {
-				// Опции.
-				// Необходимо указать данный тип макета.
-				iconLayout: "default#imageWithContent",
-				// Своё изображение иконки метки.
-				iconImageHref: "assets/img/pin.svg",
-				// Размеры метки.
-				iconImageSize: [30, 40],
-				// Смещение левого верхнего угла иконки относительно
-				// её "ножки" (точки привязки).
-				iconImageOffset: [-30, -40],
-				// Смещение слоя с содержимым относительно слоя с картинкой.
-				iconContentOffset: [15, 15],
-				// Макет содержимого.
-			});
-		// добовление коллекции на карту
-		for (var i = 0, l = colectionList.length; i < l; i++) {
-			collection.add(new ymaps.Placemark(colectionList[i].coordinates));
-			collection.add(
-				new ymaps.Placemark(colectionList[i].coordinates, {
-					iconContent: `<div class='map-icon-position'>
+	function initIndexMap() {
+		let idIndexMap = document.getElementById("map-index");
+		// координаты, названия городов, содержимое баллунов
+		let colectionList = [
+			{
+				coordinates: [55.755811, 37.617617],
+				name: "EASTEX",
+			},
+			{
+				coordinates: [43.115384, 131.878783],
+				name: "EASTEX",
+			},
+			{
+				coordinates: [-33.477669, -70.642364],
+				name: "EASTEX",
+			},
+		];
+		// Создание карты.
+		if (idIndexMap) {
+			const map = new ymaps.Map(idIndexMap, {
+					center: colectionList[0].coordinates,
+					zoom: 18,
+					controls: [],
+				}),
+				// создание коллекции
+				collection = new ymaps.GeoObjectCollection(null, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: "default#imageWithContent",
+					// Своё изображение иконки метки.
+					iconImageHref: "assets/img/pin.svg",
+					// Размеры метки.
+					iconImageSize: [30, 40],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-30, -40],
+					// Смещение слоя с содержимым относительно слоя с картинкой.
+					iconContentOffset: [15, 15],
+					// Макет содержимого.
+				});
+			// добовление коллекции на карту
+			for (var i = 0, l = colectionList.length; i < l; i++) {
+				collection.add(
+					new ymaps.Placemark(colectionList[i].coordinates)
+				);
+				collection.add(
+					new ymaps.Placemark(colectionList[i].coordinates, {
+						iconContent: `<div class='map-icon-position'>
 										<div class='map-icon-container map-icon-container-back'>
 											${colectionList[i].name}
 										</div>
 								</div>`,
-				})
-			);
-		}
-
-		map.geoObjects.add(collection);
-		map.behaviors.disable("scrollZoom");
-		map.behaviors.disable("drag");
-		map.behaviors.disable("dblClickZoom");
-
-		let mapInputSwitch = document.querySelectorAll(".map-input-switch");
-		mapInputSwitch.forEach((input) => {
-			if (input.checked) {
-				activeMap(input, map, colectionList);
+					})
+				);
 			}
-			input.addEventListener("input", () => {
-				activeMap(input, map, colectionList);
-			});
-		});
-		const zoomControl = new ymaps.control.ZoomControl({
-			options: {
-				size: "small",
-				position: { right: 10, bottom: 250 },
-			},
-		});
-		map.controls.add(zoomControl);
-	}
-}
 
-function activeMap(input, map, colectionList) {
-	let numCoordinat = +input.getAttribute("data-coordinat-num");
-	map.setCenter(colectionList[numCoordinat].coordinates);
+			map.geoObjects.add(collection);
+			map.behaviors.disable("scrollZoom");
+			map.behaviors.disable("drag");
+			map.behaviors.disable("dblClickZoom");
+
+			let mapInputSwitch = document.querySelectorAll(".map-input-switch");
+			mapInputSwitch.forEach((input) => {
+				if (input.checked) {
+					activeMap(input, map, colectionList);
+				}
+				input.addEventListener("input", () => {
+					activeMap(input, map, colectionList);
+				});
+			});
+			const zoomControl = new ymaps.control.ZoomControl({
+				options: {
+					size: "small",
+					position: { right: 10, bottom: 250 },
+				},
+			});
+			map.controls.add(zoomControl);
+		}
+	}
+
+	function activeMap(input, map, colectionList) {
+		let numCoordinat = +input.getAttribute("data-coordinat-num");
+		map.setCenter(colectionList[numCoordinat].coordinates);
+	}
 }
 
 const postsSwiper = () => {
@@ -1229,4 +1241,25 @@ function priceSwiper() {
 	}
 }
 priceSwiper();
+
+function service() {
+	const serviceWrapp = document.querySelector(".service__swiper");
+	const serviceInstall = {
+		slidesPerView: 1,
+		spaceBetween: 7,
+		loop: true,
+		navigation: {
+			nextEl: ".service__btn-next",
+			prevEl: ".service__btn-prev",
+		},
+		pagination: {
+			el: ".service__swiper-pagination",
+			type: "bullets",
+		},
+	};
+	if (serviceWrapp) {
+		const serviceSwiper = new Swiper(serviceWrapp, serviceInstall);
+	}
+}
+service();
 
