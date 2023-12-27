@@ -3110,6 +3110,30 @@ header {
     top: 0;
   }
 }
+.header-btn-why button {
+  border-radius: 5px;
+  border: 1px solid #D78400;
+  mix-blend-mode: normal;
+  padding: 13px 10px;
+  background: #DBDDDF;
+  color: #D78400;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header-login-feedback .header-feedback-icon {
+  width: 23px;
+  height: 18px;
+}
+
+.header-login-feedback-btn {
+  min-height: 38px;
+}
+
 .general {
   margin-top: 50px;
   min-height: calc(100vh - 132px - 50px);
