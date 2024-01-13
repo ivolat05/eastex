@@ -1227,18 +1227,29 @@ function service() {
 service();
 
 function retail() {
-	const retailWrapp = document.querySelector(".retail__swiper");
+	const retailWrapp = document.querySelectorAll(".retail__swiper");
 	const retailInstall = {
 		slidesPerView: 1,
 		spaceBetween: 7,
 		loop: true,
-		navigation: {
-			nextEl: ".retail__client-next",
-			prevEl: ".retail__client-prev",
-		},
 	};
 	if (retailWrapp) {
-		const retailSwiper = new Swiper(retailWrapp, retailInstall);
+		retailWrapp.forEach((item) => {
+			const retailSwiper = new Swiper(item, retailInstall);
+			let containerSwiper = item.closest(".retail__client-box");
+			let btns = containerSwiper.querySelectorAll(".retail__client-btn");
+			if (btns) {
+				btns.forEach((button) => {
+					button.addEventListener("click", () => {
+						if (button.classList.contains("retail__client-prev")) {
+							retailSwiper.slidePrev();
+						} else {
+							retailSwiper.slideNext();
+						}
+					});
+				});
+			}
+		});
 	}
 }
 retail();

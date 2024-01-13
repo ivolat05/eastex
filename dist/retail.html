@@ -739,98 +739,368 @@
 				Наши клиенты
 			</h3>
 			<div class="retail__client-header --scroll">
-				<a href="#" class="retail__client-link --active">
-					Одежда
-				</a>
-				<a href="#" class="retail__client-link">
-					Косметика
-				</a>
-				<a href="#" class="retail__client-link">
-					Электроника
-				</a>
-				<a href="#" class="retail__client-link">
-					Обувь
-				</a>
-			</div>
-			<div class="retail__client-row">
-				<div class="retail__client-coll">
-					<h4 class="retail__subtitle">
+				<label class="label retail__client-label">
+					<input checked name="retail" class="tab-input  label-input" type="radio" data-tab="retail-1">
+					<span class="retail__client-link  ">
 						Одежда
-					</h4>
+					</span></label>
+				<label class="label retail__client-label">
+					<input name="retail" class="tab-input  label-input" type="radio" data-tab="retail-2">
+					<span class="retail__client-link">
+						Косметика
+					</span></label>
+				<label class="label retail__client-label">
+					<input name="retail" class="tab-input  label-input" type="radio" data-tab="retail-3">
+					<span class="retail__client-link">
+						Электроника
+					</span></label>
+				<label class="label retail__client-label">
+					<input name="retail" class="tab-input  label-input" type="radio" data-tab="retail-4">
+					<span class="retail__client-link">
+						Обувь
+					</span>
+				</label>
+			</div>
+			<div id="retail-1" class="tab retail__tab">
+				<div class="retail__client-row">
+					<div class="retail__client-coll">
+						<h4 class="retail__subtitle">
+							Работаем с продавцами одежды и всяким другим
+						</h4>
 
-					<p class="retail__subtext">
-						Транспортные и логистические услуги для оптимизации цепочек поставок и соблюдения более жестких
-						производственных графиков.
-					</p>
-				</div>
-				<div class="retail__client-box">
-					<div class="retail__client-box-btn">
-						<button class="retail__client-btn retail__client-prev">
-							<img src="assets/img/prev.svg" alt="">
-						</button>
-						<button class="retail__client-btn retail__client-next">
-							<img src="assets/img/next.svg" alt="">
-						</button>
+						<p class="retail__subtext">
+							Транспортные и логистические услуги для оптимизации цепочек поставок и соблюдения более
+							жестких
+							производственных графиков.
+						</p>
 					</div>
-					<div class="retail__swiper">
-						<div class="swiper-wrapper retail__swiper-wrapper">
-							<div class="swiper-slide retail__swiper-slide">
-								<img src="assets/img/retail.jpg" alt="">
-							</div>
-							<div class="swiper-slide retail__swiper-slide">
-								<img src="assets/img/retail.jpg" alt="">
-							</div>
-							<div class="swiper-slide retail__swiper-slide">
-								<img src="assets/img/retail.jpg" alt="">
+					<div class="retail__client-box">
+						<div class="retail__client-box-btn">
+							<button class="retail__client-btn retail__client-prev">
+								<img src="assets/img/prev.svg" alt="">
+							</button>
+							<button class="retail__client-btn retail__client-next">
+								<img src="assets/img/next.svg" alt="">
+							</button>
+						</div>
+						<div class="retail__swiper">
+							<div class="swiper-wrapper retail__swiper-wrapper">
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="retail__row">
-				<h4 class="retail__row-title">
-					Окажем услуги
-				</h4>
-				<div class="retail__box-img">
-					<img src="assets/img/retail-2.jpg" alt="">
+				<div class="retail__row">
+					<h4 class="retail__row-title">
+						Окажем услуги
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<ul class="retail-list">
+						<li class="retail__list-inner">
+							Хранение и управление складскими запасами: складские услуги, включая прием, размещение и
+							хранение одежды. Он также управляет инвентаризацией и осуществляет проверку наличия товара
+							на
+							складе.
+						</li>
+						<li class="retail__list-inner">
+							Управление заказами и упаковка: принимаем заказы от заказчиков и осуществляем упаковку
+							одежды
+							для отправки. Он также отслеживаем и обрабатываем возвраты и обмены товаров.
+						</li>
+						<li class="retail__list-inner">
+							Транспортировка и доставка: отвечаем за организацию транспортировки одежды от склада до
+							точки
+							назначения. Это включает выбор оптимальных маршрутов, осуществление перевозки и отслеживание
+							груза.
+						</li>
+						<li class="retail__list-inner">
+							Соблюдение таможенных правил, включая классификацию кодов ТН ВЭД, маркировку.
+						</li>
+					</ul>
 				</div>
-				<ul class="retail-list">
-					<li class="retail__list-inner">
-						Хранение и управление складскими запасами: складские услуги, включая прием, размещение и
-						хранение одежды. Он также управляет инвентаризацией и осуществляет проверку наличия товара на
-						складе.
-					</li>
-					<li class="retail__list-inner">
-						Управление заказами и упаковка: принимаем заказы от заказчиков и осуществляем упаковку одежды
-						для отправки. Он также отслеживаем и обрабатываем возвраты и обмены товаров.
-					</li>
-					<li class="retail__list-inner">
-						Транспортировка и доставка: отвечаем за организацию транспортировки одежды от склада до точки
-						назначения. Это включает выбор оптимальных маршрутов, осуществление перевозки и отслеживание
-						груза.
-					</li>
-					<li class="retail__list-inner">
-						Соблюдение таможенных правил, включая классификацию кодов ТН ВЭД, маркировку.
-					</li>
-				</ul>
-			</div>
-			<div class="retail__row-2">
-				<h4 class="retail__row-title">
-					Превращайте возможности в победы
-				</h4>
-				<div class="retail__box-img">
-					<img src="assets/img/retail-2.jpg" alt="">
+				<div class="retail__row-2">
+					<h4 class="retail__row-title">
+						Превращайте возможности в победы
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<p class="retail__row-text">
+						Мы обслуживаем широкий круг розничных компаний, сначала ма оценивая текущие логистические
+						маршруты,
+						чтобы увидеть, где существуют возможности. Затем мы внедряем лучшие практики, повышаем
+						эффективность, текущую аналитику и креативные решения, которые могут оптимизировать и снизить
+						затраты на доставку и упростить администрирование — все это поможет вам на шаг опередить
+						конкурентов. И оставаться на высоком уровне.
+					</p>
 				</div>
-				<p class="retail__row-text">
-					Мы обслуживаем широкий круг розничных компаний, сначала ма оценивая текущие логистические маршруты,
-					чтобы увидеть, где существуют возможности. Затем мы внедряем лучшие практики, повышаем
-					эффективность, текущую аналитику и креативные решения, которые могут оптимизировать и снизить
-					затраты на доставку и упростить администрирование — все это поможет вам на шаг опередить
-					конкурентов. И оставаться на высоком уровне.
-				</p>
 			</div>
+			<div id="retail-2" class="tab retail__tab">
+				<div class="retail__client-row">
+					<div class="retail__client-coll">
+						<h4 class="retail__subtitle">
+							Одежда
+						</h4>
 
+						<p class="retail__subtext">
+							Транспортные и логистические услуги для оптимизации цепочек поставок и соблюдения более
+							жестких
+							производственных графиков.
+						</p>
+					</div>
+					<div class="retail__client-box">
+						<div class="retail__client-box-btn">
+							<button class="retail__client-btn retail__client-prev">
+								<img src="assets/img/prev.svg" alt="">
+							</button>
+							<button class="retail__client-btn retail__client-next">
+								<img src="assets/img/next.svg" alt="">
+							</button>
+						</div>
+						<div class="retail__swiper">
+							<div class="swiper-wrapper retail__swiper-wrapper">
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="retail__row">
+					<h4 class="retail__row-title">
+						Окажем услуги
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<ul class="retail-list">
+						<li class="retail__list-inner">
+							Хранение и управление складскими запасами: складские услуги, включая прием, размещение и
+							хранение одежды. Он также управляет инвентаризацией и осуществляет проверку наличия товара
+							на
+							складе.
+						</li>
+						<li class="retail__list-inner">
+							Управление заказами и упаковка: принимаем заказы от заказчиков и осуществляем упаковку
+							одежды
+							для отправки. Он также отслеживаем и обрабатываем возвраты и обмены товаров.
+						</li>
+						<li class="retail__list-inner">
+							Транспортировка и доставка: отвечаем за организацию транспортировки одежды от склада до
+							точки
+							назначения. Это включает выбор оптимальных маршрутов, осуществление перевозки и отслеживание
+							груза.
+						</li>
+						<li class="retail__list-inner">
+							Соблюдение таможенных правил, включая классификацию кодов ТН ВЭД, маркировку.
+						</li>
+					</ul>
+				</div>
+				<div class="retail__row-2">
+					<h4 class="retail__row-title">
+						Превращайте возможности в победы
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<p class="retail__row-text">
+						Мы обслуживаем широкий круг розничных компаний, сначала ма оценивая текущие логистические
+						маршруты,
+						чтобы увидеть, где существуют возможности. Затем мы внедряем лучшие практики, повышаем
+						эффективность, текущую аналитику и креативные решения, которые могут оптимизировать и снизить
+						затраты на доставку и упростить администрирование — все это поможет вам на шаг опередить
+						конкурентов. И оставаться на высоком уровне.
+					</p>
+				</div>
+			</div>
+			<div id="retail-3" class="tab retail__tab">
+				<div class="retail__client-row">
+					<div class="retail__client-coll">
+						<h4 class="retail__subtitle">
+							Работаем с продавцами
+						</h4>
+
+						<p class="retail__subtext">
+							Транспортные и логистические услуги для оптимизации цепочек поставок и соблюдения более
+							жестких
+							производственных графиков.
+						</p>
+					</div>
+					<div class="retail__client-box">
+						<div class="retail__client-box-btn">
+							<button class="retail__client-btn retail__client-prev">
+								<img src="assets/img/prev.svg" alt="">
+							</button>
+							<button class="retail__client-btn retail__client-next">
+								<img src="assets/img/next.svg" alt="">
+							</button>
+						</div>
+						<div class="retail__swiper">
+							<div class="swiper-wrapper retail__swiper-wrapper">
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="retail__row">
+					<h4 class="retail__row-title">
+						Окажем услуги
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<ul class="retail-list">
+						<li class="retail__list-inner">
+							Хранение и управление складскими запасами: складские услуги, включая прием, размещение и
+							хранение одежды. Он также управляет инвентаризацией и осуществляет проверку наличия товара
+							на
+							складе.
+						</li>
+						<li class="retail__list-inner">
+							Управление заказами и упаковка: принимаем заказы от заказчиков и осуществляем упаковку
+							одежды
+							для отправки. Он также отслеживаем и обрабатываем возвраты и обмены товаров.
+						</li>
+						<li class="retail__list-inner">
+							Транспортировка и доставка: отвечаем за организацию транспортировки одежды от склада до
+							точки
+							назначения. Это включает выбор оптимальных маршрутов, осуществление перевозки и отслеживание
+							груза.
+						</li>
+						<li class="retail__list-inner">
+							Соблюдение таможенных правил, включая классификацию кодов ТН ВЭД, маркировку.
+						</li>
+					</ul>
+				</div>
+				<div class="retail__row-2">
+					<h4 class="retail__row-title">
+						Превращайте возможности в победы
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<p class="retail__row-text">
+						Мы обслуживаем широкий круг розничных компаний, сначала ма оценивая текущие логистические
+						маршруты,
+						чтобы увидеть, где существуют возможности. Затем мы внедряем лучшие практики, повышаем
+						эффективность, текущую аналитику и креативные решения, которые могут оптимизировать и снизить
+						затраты на доставку и упростить администрирование — все это поможет вам на шаг опередить
+						конкурентов. И оставаться на высоком уровне.
+					</p>
+				</div>
+			</div>
+			<div id="retail-4" class="tab retail__tab">
+				<div class="retail__client-row">
+					<div class="retail__client-coll">
+						<h4 class="retail__subtitle">
+							Работаем
+						</h4>
+
+						<p class="retail__subtext">
+							Транспортные и логистические услуги для оптимизации цепочек поставок и соблюдения более
+							жестких
+							производственных графиков.
+						</p>
+					</div>
+					<div class="retail__client-box">
+						<div class="retail__client-box-btn">
+							<button class="retail__client-btn retail__client-prev">
+								<img src="assets/img/prev.svg" alt="">
+							</button>
+							<button class="retail__client-btn retail__client-next">
+								<img src="assets/img/next.svg" alt="">
+							</button>
+						</div>
+						<div class="retail__swiper">
+							<div class="swiper-wrapper retail__swiper-wrapper">
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+								<div class="swiper-slide retail__swiper-slide">
+									<img src="assets/img/retail.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="retail__row">
+					<h4 class="retail__row-title">
+						Окажем услуги
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<ul class="retail-list">
+						<li class="retail__list-inner">
+							Хранение и управление складскими запасами: складские услуги, включая прием, размещение и
+							хранение одежды. Он также управляет инвентаризацией и осуществляет проверку наличия товара
+							на
+							складе.
+						</li>
+						<li class="retail__list-inner">
+							Управление заказами и упаковка: принимаем заказы от заказчиков и осуществляем упаковку
+							одежды
+							для отправки. Он также отслеживаем и обрабатываем возвраты и обмены товаров.
+						</li>
+						<li class="retail__list-inner">
+							Транспортировка и доставка: отвечаем за организацию транспортировки одежды от склада до
+							точки
+							назначения. Это включает выбор оптимальных маршрутов, осуществление перевозки и отслеживание
+							груза.
+						</li>
+						<li class="retail__list-inner">
+							Соблюдение таможенных правил, включая классификацию кодов ТН ВЭД, маркировку.
+						</li>
+					</ul>
+				</div>
+				<div class="retail__row-2">
+					<h4 class="retail__row-title">
+						Превращайте возможности в победы
+					</h4>
+					<div class="retail__box-img">
+						<img src="assets/img/retail-2.jpg" alt="">
+					</div>
+					<p class="retail__row-text">
+						Мы обслуживаем широкий круг розничных компаний, сначала ма оценивая текущие логистические
+						маршруты,
+						чтобы увидеть, где существуют возможности. Затем мы внедряем лучшие практики, повышаем
+						эффективность, текущую аналитику и креативные решения, которые могут оптимизировать и снизить
+						затраты на доставку и упростить администрирование — все это поможет вам на шаг опередить
+						конкурентов. И оставаться на высоком уровне.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

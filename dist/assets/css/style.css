@@ -10071,22 +10071,27 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-right: 98px;
   padding-left: 5px;
   padding-right: 5px;
+  cursor: pointer;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-.retail__client-link:nth-last-child(1) {
-  margin-right: 0;
-}
 .retail__client-link:hover {
   border-bottom: 3px solid #FF9B36;
 }
 
-.retail__client-link.--active {
+.retail__client-label {
+  margin-right: 98px;
+  display: block;
+}
+.retail__client-label:nth-last-child(1) {
+  margin-right: 0;
+}
+
+input:checked + .retail__client-link {
   border-bottom: 3px solid #FF9B36;
 }
 
