@@ -436,6 +436,7 @@ function baner() {
 		slidesPerView: 1,
 		spaceBetween: 7,
 		loop: true,
+		loopAdditionalSlides: 2,
 		autoplay: {
 			delay: 4000,
 		},
@@ -471,6 +472,7 @@ geografySwiperBlock();
 
 AOS.init({
 	duration: 2400,
+	once: true,
 });
 
 const startAnim = document.querySelector(".start");
@@ -790,7 +792,7 @@ const deliverySwipers = () => {
 	}
 };
 deliverySwipers();
- 
+
 let idPreseceMap = document.getElementById("presence-map");
 if (idPreseceMap) {
 	ymaps.ready(init);
@@ -1223,4 +1225,21 @@ function service() {
 	}
 }
 service();
+
+function retail() {
+	const retailWrapp = document.querySelector(".retail__swiper");
+	const retailInstall = {
+		slidesPerView: 1,
+		spaceBetween: 7,
+		loop: true,
+		navigation: {
+			nextEl: ".retail__client-next",
+			prevEl: ".retail__client-prev",
+		},
+	};
+	if (retailWrapp) {
+		const retailSwiper = new Swiper(retailWrapp, retailInstall);
+	}
+}
+retail();
 

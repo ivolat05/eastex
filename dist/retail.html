@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!--favicon-->
+	<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#00c3ff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<title>Розничная торговля</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+	<div class="page">
+		<header class="header">
+	<div class="header__wrapper">
+
+		<div class="header__mobile-top">
+			<div class="header__mobive-top-coll">
+				<a href="#" class="header__mobile-logo">
+					<img src="assets/img/icons-logo.svg" alt="">
+				</a>
+			</div>
+
+			<a href="#" class="header__mobil-link">
+				<img src="assets/img/mob-tell.svg" alt="">
+			</a>
+
+		</div>
+		<div class="header-mobil-wrapper">
+			<div class="header-content">
+				<div class="header-logo">
+					<img class="header-logo-desc" src="assets/img/logo.png" alt="">
+					<img class="header-logo-table" src="assets/img/logo-desc.png" alt="">
+				</div>
+				<div class="header-nav">
+					<div class="header__nav-top">
+						<div class="header__nav-top-links">
+							<ul>
+								<li><a href="">Пресс-центр</a></li>
+								<li><a href="">География</a></li>
+								<li><a href="">Аутсорсинг ВЭД</a></li>
+							</ul>
+						</div>
+						<div class="header__nav-top-about">
+							<div class="header__nav-top-about-mail">
+								<a href="mailto:info@eastex.ru"><img class="header__mess-icon"
+										src="assets/img/mail-box.svg" alt=""> info@eastex.ru</a>
+								<span><img class="header__mess-icon" src="assets/img/clock.png" alt=""> Пн.-Пт.: с
+									09:00 до 18:00 </span>
+							</div>
+							<div class="header__nav-top-about-tels">
+
+								<a href="tel:+74951865463">
+									<img class="header__mess-icon" src="assets/img/tell.svg" alt="">
+									+7 (495) 186-54-63 <span class="header__sity-mobile">г.
+										Москва
+									</span></a>
+
+								<a href="tel:++74235409363">
+									<img class="header__mess-icon" src="assets/img/tell.svg" alt="">
+									+7 (423) 540-93-63 <span class="header__sity-mobile">г.
+										Владивосток</span></a>
+							</div>
+
+						</div>
+					</div>
+					<div class="header__nav-bottom">
+						<ul>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Почему мы
+									</span>
+								</a></li>
+							<li><button data-tab-one="#industries" class="header__button header__nav-link --active">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Отрасли
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button>
+
+							</li>
+							<li><button data-tab-one="#customs" class="header__button header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Таможенное оформление
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button></li>
+							<li>
+
+								<button data-tab-one="#transportation" class="header__button header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Перевозки
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button>
+							</li>
+							<li>
+
+								<button data-tab-one="#services" class="header__button header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Услуги
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button>
+							</li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Контакты
+									</span>
+								</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="header-login">
+					<a href="#" class="header__login-login">
+						<span>Logos </span>
+						<img src="assets/img/login.png" alt="">
+					</a>
+					<div class="header-login-feedback header-btn-why">
+						<button data-open-modal="modal-form">Отправить запрос</button>
+					</div>
+					<div class="header__close-coll">
+						<button data-open-modal="modal-form" class="header__close-btn header__mob-tell">
+							<img src="assets/img/tell-head.svg" alt="">
+						</button>
+						<button class="header__close header__close-btn">
+							<img src="assets/img/close.png" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__heand  ">
+		<div class="header__heand-padding">
+			<div class="container  ">
+				<button data-remove-btn="header__button"
+					class="header__hend-subinner-remove header__hend-btn btn-remove-block">
+					Назад
+				</button>
+				<div class="header__heand-container">
+					<div id="#industries" class="heaader__heand-tab   ">
+						<div class="header__heand-top">
+							<h3 class="header_hend-title">
+								Отрасли
+							</h3>
+						</div>
+						<div class="header__head-body">
+							<ul class="header__hend-list">
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Сельское хозяйство
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Промышленное производство
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Электроника и технологии
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Фармацевтическая промышленность
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="#customs" class="heaader__heand-tab   ">
+						<div class="header__heand-top">
+
+							<h3 class="header_hend-title">
+								Таможенное оформление
+							</h3>
+						</div>
+
+						<div class="header__head-body">
+
+							<ul class="header__hend-list  ">
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-1" class="submenu-btn header__heand-link ">
+										Железнодорожные перевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-2" class="submenu-btn header__heand-link">
+										Авиаперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-3" class="submenu-btn header__heand-link">
+										Автоперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+							<div id="#submenu-1" class="header__hend-subtab  ">
+								<ul class="header__hend-sublist ">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Индии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Европы
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Японии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Турции
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Вьетнама
+										</a>
+									</li>
+
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из США
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div id="#submenu-2" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+							<div id="#submenu-3" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="#transportation" class="heaader__heand-tab   ">
+						<div class="header__heand-top header__heand-top-row">
+
+							<label class="   label">
+								<input checked name="header__map" class="tab-input premap-item-item label-input"
+									type="radio" data-tab="header__head-body-1">
+								<span
+									class="tab-input-span header_hend-title header_hend-title-label  label-input-span">
+									Вид транспорта
+								</span>
+							</label>
+							<label class="   label">
+								<input name="header__map" class="tab-input premap-item-item label-input" type="radio"
+									data-tab="header__head-body-2">
+								<span class="tab-input-span header_hend-title header_hend-title-label label-input-span">
+									География
+								</span>
+							</label>
+							<label class="   label">
+								<input name="header__map" class="tab-input premap-item-item label-input" type="radio"
+									data-tab="header__head-body-3">
+								<span
+									class="tab-input-span header_hend-title header_hend-title-label  label-input-span">
+									block-2
+								</span>
+							</label>
+						</div>
+
+						<div id="header__head-body-1" class="tab  header__head-body">
+
+							<ul class="header__hend-list  ">
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-1-1" class="submenu-btn header__heand-link ">
+										Железнодорожные перевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-2-1" class="submenu-btn header__heand-link">
+										Авиаперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-3-1" class="submenu-btn header__heand-link">
+										Автоперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+							<div id="#submenu-1-1" class="header__hend-subtab  ">
+								<ul class="header__hend-sublist ">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Индии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Европы
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Японии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Турции
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Вьетнама
+										</a>
+									</li>
+
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из США
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div id="#submenu-2-1" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+							<div id="#submenu-3-1" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div id="header__head-body-2" class="tab  header__head-body">
+							<ul class="header__hend-list  ">
+
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки 1
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля 1
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="header__head-body-3" class="tab  header__head-body">
+							<ul class="header__hend-list  ">
+
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										11111111 11111111
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										222222222 222222222
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="#services" class="heaader__heand-tab  ">
+						<div class="header__heand-top">
+
+							<h3 class="header_hend-title">
+								Услуги
+							</h3>
+						</div>
+
+						<div class="header__head-body">
+							<ul class="header__hend-list  ">
+
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="header__head-swiper-line">
+						<div class="header__head-swiper">
+							<div class="header__head-swiper-wrapp swiper-wrapper">
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block1.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block2.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block2.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block2.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-pagination header__swiper-pagination">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+<div class="header__mobile-menu">
+	<div class="header__mobile-mneu-coll">
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-1.svg" alt="">
+			Перевозки
+		</a>
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-2.svg" alt="">
+			Брокер
+		</a>
+	</div>
+	<button class="header__menu-mobil-logo header__open-btn">
+		<img class="header-logo-table-img" src="assets/img/logo-mob.svg" alt="">
+		<span>
+			Меню
+		</span>
+
+	</button>
+	<div class="header__mobile-mneu-coll">
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-3.svg" alt="">
+			Контакты
+		</a>
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-4.svg" alt="">
+			Запрос
+		</a>
+	</div>
+
+</div>
+		<main class="main">
+			<div class="bread bread-padding retail-bread-padding">
+	<div class="container">
+		<ul class="bread__list">
+			<li class="bread__list-inner">
+				<a href="#" class="bread__list-link">
+					Главная
+				</a>
+			</li>
+			<li class="bread__list-inner">
+				<a href="#" class="bread__list-link">
+					Отрасли
+				</a>
+			</li>
+			<li class="bread__list-inner">
+				Розничная торговля
+			</li>
+		</ul>
+	</div>
+</div>
+			<section class="retail">
+	<div class="container">
+		<h1 class="retail-title  ">
+			Розничная торговля
+		</h1>
+		<p class="retail-text  ">
+			Подключайтесь к цепочке поставок, которая доставляет товары и обеспечивает конкурентное преимущество.
+		</p>
+		<p class="retail-text ">
+			Индустрия розничной торговли требовательна и конкурентоспособна. Глобальные логистические решения Eastex
+			призваны помочь вам справиться с этими проблемами и достичь поставленных целей. Мы помогаем широкому кругу
+			компаний в сфере розничной торговли совершенствовать их цепочки поставок с помощью отлаженного процесса,
+			который начинается с оценки текущих потребностей, выявления возможностей для повышения эффективности и
+			снижения затрат в логистики. Затем, используя наш накопленный опыт, мы разрабатываем для вас индивидуальные
+			логистические решения, позволяющие оптимизировать время и стоимость доставки.
+		</p>
+		<div class="retail__client">
+			<h3 class="retail__client-title">
+				Наши клиенты
+			</h3>
+			<div class="retail__client-header --scroll">
+				<a href="#" class="retail__client-link --active">
+					Одежда
+				</a>
+				<a href="#" class="retail__client-link">
+					Косметика
+				</a>
+				<a href="#" class="retail__client-link">
+					Электроника
+				</a>
+				<a href="#" class="retail__client-link">
+					Обувь
+				</a>
+			</div>
+			<div class="retail__client-row">
+				<div class="retail__client-coll">
+					<h4 class="retail__subtitle">
+						Одежда
+					</h4>
+
+					<p class="retail__subtext">
+						Транспортные и логистические услуги для оптимизации цепочек поставок и соблюдения более жестких
+						производственных графиков.
+					</p>
+				</div>
+				<div class="retail__client-box">
+					<div class="retail__client-box-btn">
+						<button class="retail__client-btn retail__client-prev">
+							<img src="assets/img/prev.svg" alt="">
+						</button>
+						<button class="retail__client-btn retail__client-next">
+							<img src="assets/img/next.svg" alt="">
+						</button>
+					</div>
+					<div class="retail__swiper">
+						<div class="swiper-wrapper retail__swiper-wrapper">
+							<div class="swiper-slide retail__swiper-slide">
+								<img src="assets/img/retail.jpg" alt="">
+							</div>
+							<div class="swiper-slide retail__swiper-slide">
+								<img src="assets/img/retail.jpg" alt="">
+							</div>
+							<div class="swiper-slide retail__swiper-slide">
+								<img src="assets/img/retail.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="retail__row">
+				<h4 class="retail__row-title">
+					Окажем услуги
+				</h4>
+				<div class="retail__box-img">
+					<img src="assets/img/retail-2.jpg" alt="">
+				</div>
+				<ul class="retail-list">
+					<li class="retail__list-inner">
+						Хранение и управление складскими запасами: складские услуги, включая прием, размещение и
+						хранение одежды. Он также управляет инвентаризацией и осуществляет проверку наличия товара на
+						складе.
+					</li>
+					<li class="retail__list-inner">
+						Управление заказами и упаковка: принимаем заказы от заказчиков и осуществляем упаковку одежды
+						для отправки. Он также отслеживаем и обрабатываем возвраты и обмены товаров.
+					</li>
+					<li class="retail__list-inner">
+						Транспортировка и доставка: отвечаем за организацию транспортировки одежды от склада до точки
+						назначения. Это включает выбор оптимальных маршрутов, осуществление перевозки и отслеживание
+						груза.
+					</li>
+					<li class="retail__list-inner">
+						Соблюдение таможенных правил, включая классификацию кодов ТН ВЭД, маркировку.
+					</li>
+				</ul>
+			</div>
+			<div class="retail__row-2">
+				<h4 class="retail__row-title">
+					Превращайте возможности в победы
+				</h4>
+				<div class="retail__box-img">
+					<img src="assets/img/retail-2.jpg" alt="">
+				</div>
+				<p class="retail__row-text">
+					Мы обслуживаем широкий круг розничных компаний, сначала ма оценивая текущие логистические маршруты,
+					чтобы увидеть, где существуют возможности. Затем мы внедряем лучшие практики, повышаем
+					эффективность, текущую аналитику и креативные решения, которые могут оптимизировать и снизить
+					затраты на доставку и упростить администрирование — все это поможет вам на шаг опередить
+					конкурентов. И оставаться на высоком уровне.
+				</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+			<section class="contact contact-contact">
+	<div class="wrapper contact-wrapp">
+
+		<div class="contact-block contact-contact-block">
+			<div class="contact-block-text">
+				<h3>Есть вопросы?</h3>
+				<p>Наши специалисты готовы помочь. Свяжитесь с нами, и мы найдем необходимое вам решение.</p>
+			</div>
+
+			<img src="assets/img/man.png" alt="">
+
+
+			<button class="contact-btn" data-open-modal="modal-form">Свяжитесь с нами
+				онлайн</button>
+
+		</div>
+	</div>
+</section>
+			<section class="blocks">
+	<div class="wrapper">
+		<div class="blocks-header">
+			<h3 class="block-title">НАЙДИТЕ СПОСОБЫ УЛУЧШИТЬ СВОЮ ЦЕПОЧКУ ПОСТАВОК И ЛОГИСТИЧЕСКУЮ СТРАТЕГИЮ</h3>
+			<p class="blocks-description">Мы публикуем информацию, которая, по нашему мнению, будет вам полезна. Здесь
+				вы
+				найдете всю необходимую информацию о практике, тенденциях в отрасли
+				или практических инструментах. Эти ресурсы в вашем распоряжение: тематические исследования в области
+				логистики и официальные документы, а также вебинары и видеоролики о нашей работе.</p>
+		</div>
+		<div class="blocks-container blocks-swiper">
+			<div class="blocks-swiper-wrapp swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item ">
+						<img src="assets/img/block1.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+								показывала стабильный рост но, тем не менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block2.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Пограничные таможенные пункты пропуска в России</p>
+							<p class="block-content">
+								Динамика внешнеторговых отношений России и Китая за последние 20 лет показывала
+								стабильный рост но, тем не
+								менее, во внешнеторговом обороте Китая Россия
+							</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block3.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Пограничные таможенные пункты пропуска в России</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет показывала стабильный рост но, тем не
+								менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item ">
+						<img src="assets/img/block1.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+								показывала стабильный рост но, тем не менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block2.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+								показывала стабильный рост но, тем не менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block3.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+							</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="wrapper">
+		<div class="footer-container">
+			<div class="footer-container-coll">
+				<img class="footer-logo" src="assets/img/logo-footer.png" alt="">
+				<p>Международный 3pl <br> логистический оператор</p>
+			</div>
+			<div>
+				<div class="footer-menu">
+					<ul>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Перевозки</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Склады в Китае</a></li>
+						<li><a href="#">Отрасли</a></li>
+						<li><a href="#">Маркировка товара</a></li>
+						<li><a href="#">Разрешительные документы</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div>
+				<ul class="footer-contacts">
+					<li>
+						<a href="tel: +74951865463" class='footer__contact-link footer__contact-tell'>
+							<img src="assets/img/tell-white-new.png" alt="">
+							<span>
+								+7 (495) 186-54-63
+							</span>
+						</a>
+
+					</li>
+					<li>
+						<a href="mailto:info@eastex.ru" class='footer__contact-mail footer__contact-link'>
+							<img src="assets/img/mail-white-new.png" alt="">
+							<span>
+								info@eastex.ru
+							</span>
+						</a>
+
+					</li>
+					<li>
+						<div class='footer__contact-link footer__contact-text'>
+							<img src="assets/img/pin-white-new.png" alt="">
+							<span>
+								125040, г. Москва, 3-я улица Ямского поля, д. 2, корп. 12, офис 510
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class='footer__contact-link footer__contact-text'>
+							<img src="assets/img/pin-white-new.png" alt="">
+							<span>
+								690090, г.Владивосток, ул.Тигровая, 20а, помещение № 16
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p class="copyright">© 2023 Транспортно-логистическая компания «Eastex»</p>
+		<div class="footer-bottom">
+			<a href="#">Пользовательское соглашение</a>
+			<a href="#">Политика конфиденциальности</a>
+		</div>
+	</div>
+</footer>
+		<div id="modal-form" class="modal__container-fon    modal-background">
+	<form class="modal__container modal-form modal___container-content">
+		<button type="button" class="modal-btn modal-btn-close btn__modal--close">
+			<div class="header__close-line"></div>
+			<div class="header__close-line"></div>
+		</button>
+		<h3 class="modal__container-title">
+			Отправьте нам запрос по необходимой вам услуги, и мы оперативно сообщим о возможности поставки арматуры
+			в
+			ближайшее время на ваших условиях! Будем рады видеть вас в числе своих партнёров!
+		</h3>
+		<div class="modal__form-row">
+			<div class="modal__form-coll modal__form-coll-1">
+				<div class="modal__form-coll-container">
+					<input class="modal__form-input" type="text" placeholder="Имя*">
+					<input class="modal__form-input" type="tel" placeholder="7 (977) 000 44 94*">
+					<input class="modal__form-input" type="email" placeholder="E-mail*">
+				</div>
+
+				<div class="modal__form-box">
+					<label class="modal__form-label label">
+						<input multiple class="modal__form-label-input label-input" type="file">
+						<span class="modal__form-label-btn">
+							Выберете файл
+						</span>
+					</label>
+					<div class="modal__form-box-text">
+						До 5 файлов, объем не более 30Мб
+					</div>
+				</div>
+				<div class="modal__form-box-checked">
+					<label class="modal__form-check label label-check">
+						<input class="modal__form-check-input lable__check-input label-input" type="checkbox">
+						<span class="modal__form-check-span label__check-span">
+							Подтверждаю, что являюсь юридическим лицом*
+						</span>
+					</label>
+					<label class="modal__form-check label label-check">
+						<input class="modal__form-check-input lable__check-input label-input" type="checkbox">
+						<span class="modal__form-check-span label__check-span">
+							Принимаю условия Политики конфиденциальности
+						</span>
+					</label>
+				</div>
+
+			</div>
+
+			<div class="modal__form-coll modal__form-coll-2">
+				<div class="moda__form-get">
+
+				</div>
+				<div class="modal__form-captcha">
+
+				</div>
+			</div>
+			<button type="submit" class="modal__form-coll-3 modal__form-btn btn__modal--close">
+				Отправит запрос
+			</button>
+		</div>
+	</form>
+</div>
+	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
