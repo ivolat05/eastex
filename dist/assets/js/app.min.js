@@ -752,13 +752,19 @@ const awardsSwipers = () => {
 awardsSwipers();
 
 const deliverySwipers = () => {
-	let swiperDeliveryContainer = document.querySelector(".delivery-swiper");
+	let swiperDeliveryContainer = document.querySelectorAll(".delivery-swiper");
 	let instalSwiper = {
 		speed: 400,
 		slidesPerView: 3,
+		freeMode: true,
+		mousewheel: true,
 		spaceBetween: 15,
 		autoplay: {
 			delay: 5000,
+		},
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			draggable: true,
 		},
 		breakpoints: {
 			320: {
@@ -785,10 +791,9 @@ const deliverySwipers = () => {
 		},
 	};
 	if (swiperDeliveryContainer) {
-		const swiperDelivery = new Swiper(
-			swiperDeliveryContainer,
-			instalSwiper
-		);
+		swiperDeliveryContainer.forEach((swiperContainer) => {
+			const swiperDelivery = new Swiper(swiperContainer, instalSwiper);
+		});
 	}
 };
 deliverySwipers();
@@ -1253,4 +1258,39 @@ function retail() {
 	}
 }
 retail();
+
+const exportSwipers = () => {
+	let swiperExportContainer = document.querySelector(".export__swiper");
+	let instalSwiper = {
+		slidesPerView: 2,
+		spaceBetween: 45,
+		autoHeight: false,
+
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			draggable: true,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+				autoHeight: true,
+			},
+
+			772: {
+				slidesPerView: 2,
+				spaceBetween: 25,
+				autoHeight: false,
+			},
+			1200: {
+				slidesPerView: 2,
+				spaceBetween: 45,
+			},
+		},
+	};
+	if (swiperExportContainer) {
+		const swiperExport = new Swiper(swiperExportContainer, instalSwiper);
+	}
+};
+exportSwipers();
 

@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!--favicon-->
+	<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#00c3ff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<title>Перевозки</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+	<div class="page">
+		<header class="header">
+	<div class="header__wrapper">
+
+		<div class="header__mobile-top">
+			<div class="header__mobive-top-coll">
+				<a href="#" class="header__mobile-logo">
+					<img src="assets/img/icons-logo.svg" alt="">
+				</a>
+			</div>
+
+			<a href="#" class="header__mobil-link">
+				<img src="assets/img/mob-tell.svg" alt="">
+			</a>
+
+		</div>
+		<div class="header-mobil-wrapper">
+			<div class="header-content">
+				<div class="header-logo">
+					<img class="header-logo-desc" src="assets/img/logo.png" alt="">
+					<img class="header-logo-table" src="assets/img/logo-desc.png" alt="">
+				</div>
+				<div class="header-nav">
+					<div class="header__nav-top">
+						<div class="header__nav-top-links">
+							<ul>
+								<li><a href="">Пресс-центр</a></li>
+								<li><a href="">География</a></li>
+								<li><a href="">Аутсорсинг ВЭД</a></li>
+							</ul>
+						</div>
+						<div class="header__nav-top-about">
+							<div class="header__nav-top-about-mail">
+								<a href="mailto:info@eastex.ru"><img class="header__mess-icon"
+										src="assets/img/mail-box.svg" alt=""> info@eastex.ru</a>
+								<span><img class="header__mess-icon" src="assets/img/clock.png" alt=""> Пн.-Пт.: с
+									09:00 до 18:00 </span>
+							</div>
+							<div class="header__nav-top-about-tels">
+
+								<a href="tel:+74951865463">
+									<img class="header__mess-icon" src="assets/img/tell.svg" alt="">
+									+7 (495) 186-54-63 <span class="header__sity-mobile">г.
+										Москва
+									</span></a>
+
+								<a href="tel:++74235409363">
+									<img class="header__mess-icon" src="assets/img/tell.svg" alt="">
+									+7 (423) 540-93-63 <span class="header__sity-mobile">г.
+										Владивосток</span></a>
+							</div>
+
+						</div>
+					</div>
+					<div class="header__nav-bottom">
+						<ul>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Почему мы
+									</span>
+								</a></li>
+							<li><button data-tab-one="#industries" class="header__button header__nav-link --active">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Отрасли
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button>
+
+							</li>
+							<li><button data-tab-one="#customs" class="header__button header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Таможенное оформление
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button></li>
+							<li>
+
+								<button data-tab-one="#transportation" class="header__button header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Перевозки
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button>
+							</li>
+							<li>
+
+								<button data-tab-one="#services" class="header__button header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Услуги
+									</span>
+									<img class="header--arrow" src="assets/img/arrow.svg" alt="">
+								</button>
+							</li>
+							<li><a href="#" class="header__nav-link">
+									<span>
+										<img class="header__nav-link-svg" src="assets/img/icons.svg" alt="">
+										Контакты
+									</span>
+								</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="header-login">
+					<a href="#" class="header__login-login">
+						<span>Logos </span>
+						<img src="assets/img/login.png" alt="">
+					</a>
+					<div class="header-login-feedback header-btn-why">
+						<button data-open-modal="modal-form">Отправить запрос</button>
+					</div>
+					<div class="header__close-coll">
+						<button data-open-modal="modal-form" class="header__close-btn header__mob-tell">
+							<img src="assets/img/tell-head.svg" alt="">
+						</button>
+						<button class="header__close header__close-btn">
+							<img src="assets/img/close.png" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__heand  ">
+		<div class="header__heand-padding">
+			<div class="container  ">
+				<button data-remove-btn="header__button"
+					class="header__hend-subinner-remove header__hend-btn btn-remove-block">
+					Назад
+				</button>
+				<div class="header__heand-container">
+					<div id="#industries" class="heaader__heand-tab   ">
+						<div class="header__heand-top">
+							<h3 class="header_hend-title">
+								Отрасли
+							</h3>
+						</div>
+						<div class="header__head-body">
+							<ul class="header__hend-list">
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Сельское хозяйство
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Промышленное производство
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Электроника и технологии
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Фармацевтическая промышленность
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="#customs" class="heaader__heand-tab   ">
+						<div class="header__heand-top">
+
+							<h3 class="header_hend-title">
+								Таможенное оформление
+							</h3>
+						</div>
+
+						<div class="header__head-body">
+
+							<ul class="header__hend-list  ">
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-1" class="submenu-btn header__heand-link ">
+										Железнодорожные перевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-2" class="submenu-btn header__heand-link">
+										Авиаперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-3" class="submenu-btn header__heand-link">
+										Автоперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+							<div id="#submenu-1" class="header__hend-subtab  ">
+								<ul class="header__hend-sublist ">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Индии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Европы
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Японии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Турции
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Вьетнама
+										</a>
+									</li>
+
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из США
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div id="#submenu-2" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+							<div id="#submenu-3" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="#transportation" class="heaader__heand-tab   ">
+						<div class="header__heand-top header__heand-top-row">
+
+							<label class="   label">
+								<input checked name="header__map" class="tab-input premap-item-item label-input"
+									type="radio" data-tab="header__head-body-1">
+								<span
+									class="tab-input-span header_hend-title header_hend-title-label  label-input-span">
+									Вид транспорта
+								</span>
+							</label>
+							<label class="   label">
+								<input name="header__map" class="tab-input premap-item-item label-input" type="radio"
+									data-tab="header__head-body-2">
+								<span class="tab-input-span header_hend-title header_hend-title-label label-input-span">
+									География
+								</span>
+							</label>
+							<label class="   label">
+								<input name="header__map" class="tab-input premap-item-item label-input" type="radio"
+									data-tab="header__head-body-3">
+								<span
+									class="tab-input-span header_hend-title header_hend-title-label  label-input-span">
+									block-2
+								</span>
+							</label>
+						</div>
+
+						<div id="header__head-body-1" class="tab  header__head-body">
+
+							<ul class="header__hend-list  ">
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-1-1" class="submenu-btn header__heand-link ">
+										Железнодорожные перевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-2-1" class="submenu-btn header__heand-link">
+										Авиаперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<button data-tab-sumenu="#submenu-3-1" class="submenu-btn header__heand-link">
+										Автоперевозки
+										<img class="submenu-btn-svg" src="assets/img/arrow-left.svg" alt="">
+									</button>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+							<div id="#submenu-1-1" class="header__hend-subtab  ">
+								<ul class="header__hend-sublist ">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Индии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Европы
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Японии
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Турции
+										</a>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Вьетнама
+										</a>
+									</li>
+
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из США
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div id="#submenu-2-1" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+							<div id="#submenu-3-1" class="header__hend-subtab">
+								<ul class="header__hend-sublist">
+									<li class="header__hend-subinner header__hend-subinner-mob">
+										<button data-remove-btn="submenu-btn"
+											class="header__hend-subinner-remove btn-remove-block">
+											Назад
+										</button>
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+
+									</li>
+									<li class="header__hend-subinner">
+										<a href="#" class="header__heand-sublink">
+											Грузы из Китая
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div id="header__head-body-2" class="tab  header__head-body">
+							<ul class="header__hend-list  ">
+
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки 1
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля 1
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="header__head-body-3" class="tab  header__head-body">
+							<ul class="header__hend-list  ">
+
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										11111111 11111111
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										222222222 222222222
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="#services" class="heaader__heand-tab  ">
+						<div class="header__heand-top">
+
+							<h3 class="header_hend-title">
+								Услуги
+							</h3>
+						</div>
+
+						<div class="header__head-body">
+							<ul class="header__hend-list  ">
+
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Морские перевозки
+									</a>
+								</li>
+								<li class="header__hend-inner">
+									<a href="#" class="header__heand-link">
+										Розничная торговля
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="header__head-swiper-line">
+						<div class="header__head-swiper">
+							<div class="header__head-swiper-wrapp swiper-wrapper">
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block1.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block2.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block2.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class=" header__swiper-item swiper-slide">
+									<img src="assets/img/block2.png" alt="">
+									<div class="header__swiper-item-block">
+										<div class="tag">Новости</div>
+										<h3 class="header__swiper-title">Куда приходят грузы из Китая?</h3>
+										<div class="header__swiper-btn btn-link ">
+											<p>Подробнее</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
+												viewBox="0 0 34 35" fill="none">
+												<g clip-path="url(#clip0_1200_1187)">
+													<path
+														d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+														fill="#FFB902"></path>
+													<path
+														d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+														fill="#FFB902"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_1200_1187">
+														<rect width="32.9541" height="34.1747" fill="white"
+															transform="translate(0.835938)"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-pagination header__swiper-pagination">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+<div class="header__mobile-menu">
+	<div class="header__mobile-mneu-coll">
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-1.svg" alt="">
+			Перевозки
+		</a>
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-2.svg" alt="">
+			Брокер
+		</a>
+	</div>
+	<button class="header__menu-mobil-logo header__open-btn">
+		<img class="header-logo-table-img" src="assets/img/logo-mob.svg" alt="">
+		<span>
+			Меню
+		</span>
+
+	</button>
+	<div class="header__mobile-mneu-coll">
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-3.svg" alt="">
+			Контакты
+		</a>
+		<a href="#" class="header__mobile-menu-link">
+			<img src="assets/img/header__mobile-4.svg" alt="">
+			Запрос
+		</a>
+	</div>
+
+</div>
+		<main class="main">
+			<section class="info transportation-info">
+	<div class="container">
+		<h1 class="title info-title transportation-info-title">
+			Международные грузоперевозки
+		</h1>
+		<p class="text info-text">
+			Международные грузоперевозки являются неотъемлемой частью современного мирового экономического развития. Они
+			представляют собой процесс доставки товаров, материалов и грузов различного назначения между разными
+			странами.
+		</p>
+	</div>
+
+	<div class="info-banner transportation-info-banner">
+		<div class="container">
+			<h3 class="info__banner-title transportation-banner-title">
+				<span>EASTEX</span> международный грузоперевозчик
+			</h3>
+			<p class="info__banner-text transportation-banner-text">
+				Наша роль — помощь бизнесу в своевременной и качественной доставке заказов своим клиентам, исключив из
+				их производственных процессов все, что связано с логистикой, тем самым сэкономив большое количество
+				ресурсов, как временных и финансовых, так и человеческих
+			</p>
+			<div class="info__banner-row transportation-banner-row">
+				<p class="info__banner-row-text">
+					Лицензированный таможенный представитель.
+					Наша компания имеет богатый опыт работы с различными таможенными и представительствами, поэтому мы
+					знаем все процедуры и регламенты, связанные с импортом и экспортом товаров. Мы гарантируем вам, что
+					ваш груз будет проходить все таможенные проверки и отчистка произойдет строго в соответствии с
+					законодательством.
+
+
+
+				</p>
+				<ul class="info__banner-list">
+					<li class="info__banner-inner">
+						Работаем только с юридическими лицами
+					</li>
+					<li class="info__banner-inner">
+						Лицензия таможенного представителя №0363/04
+					</li>
+					<li class="info__banner-inner">
+						Быстрый расчёт таможенных платежей
+					</li>
+					<li class="info__banner-inner">
+						Оформление за 1 день с минимальным количествомвом документов
+					</li>
+					<li class="info__banner-inner">
+						Офисы в Москве, Владивостоке и Шанхае (Китай)
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</section>
+			<section class="transportation">
+	<div class="container">
+		<h3 class="transportation-title title">
+			Мы осуществляем доставку и отправку грузов всеми видами транспорта
+		</h3>
+		<p class="transportation-text text">
+			Мы предоставляем различные виды перевозок осуществляется различными видами транспорта, такими как
+			автомобильный, железнодорожный, морской и авиационный.
+		</p>
+		<div class="transportation__wrapp --scroll">
+			<div class="transportation__box transportation__box-1"
+				style="background:url('../../assets/img/train.svg') no-repeat center right 0 / contain, #D9D9D9;">
+				<h4 class="transportation__box-title">
+					Железнодорожные <br> грузоперевозки
+				</h4>
+				<p class="transportation__box-text">
+					Наша компания специализируется на оказании услуг по железнодорожным грузоперевозкам. Мы предлагаем
+					надежные и эффективные решения для транспортировки грузов по железной дороге.
+				</p>
+
+				<a href="#" class="btn-link transportation__box-btn">
+					<p>Подробнее</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+						<g clip-path="url(#clip0_1200_1187)">
+							<path
+								d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+								fill="#FFB902"></path>
+							<path
+								d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+								fill="#FFB902"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_1200_1187">
+								<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+								</rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div class="transportation__box transportation__box-2"
+				style="background:url('../../assets/img/ship.svg') no-repeat center right 0 / contain, #D9D9D9;">
+				<h4 class="transportation__box-title">
+					Морские перевозки
+				</h4>
+				<p class="transportation__box-text">
+					Мы специализируемся на организации перевозок грузов по морю, обеспечивая вашим товаром безопасную и
+					эффективную доставку в любую точку мира.
+				</p>
+
+				<a href="#" class="btn-link transportation__box-btn">
+					<p>Подробнее</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+						<g clip-path="url(#clip0_1200_1187)">
+							<path
+								d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+								fill="#FFB902"></path>
+							<path
+								d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+								fill="#FFB902"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_1200_1187">
+								<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+								</rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div class="transportation__box transportation__box-3"
+				style="background:url('../../assets/img/air.svg') no-repeat center right 0 / contain, #D9D9D9;">
+				<h4 class="transportation__box-title">
+					Авиаперевозки
+				</h4>
+				<p class="transportation__box-text">
+					Наша компания специализируется на оказании услуг по авиаперевозке грузов. Мы предлагаем надежное и
+					эффективное решение для доставки грузов в любую точку мира.
+
+
+				</p>
+
+				<a href="#" class="btn-link transportation__box-btn">
+					<p>Подробнее</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+						<g clip-path="url(#clip0_1200_1187)">
+							<path
+								d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+								fill="#FFB902"></path>
+							<path
+								d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+								fill="#FFB902"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_1200_1187">
+								<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+								</rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div class="transportation__box transportation__box-4"
+				style="background:url('../../assets/img/auto.svg') no-repeat center right 0 / contain, #D9D9D9;">
+				<h4 class="transportation__box-title">
+					Автоперевозки
+				</h4>
+				<p class="transportation__box-text">
+					Наша компания специализируется на предоставлении услуг автоперевозки грузов. Мы предлагаем надежные
+					и эффективные решения для транспортировки грузов любого типа и размера.
+				</p>
+
+				<a href="#" class="btn-link transportation__box-btn">
+					<p>Подробнее</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+						<g clip-path="url(#clip0_1200_1187)">
+							<path
+								d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+								fill="#FFB902"></path>
+							<path
+								d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+								fill="#FFB902"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_1200_1187">
+								<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+								</rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="delivery">
+	<div class="container">
+		<h3 class="title delivery-title ">
+			Типы грузоперевозок
+		</h3>
+		<p class="text delivery-text">
+			Независимо от вашей отрасли, мы являемся вашим глобальным экспедитором
+		</p>
+		<div class="delivery-swiper">
+			<div class="delivery-swiper-wrapp swiper-wrapper  ">
+
+				<a href="#" class="delivery__box swiper-slide">
+					<div class="transportation-delivery-img">
+						<img src="assets/img/delivery/transportation-delivery-1.svg" alt="">
+					</div>
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Контейнерные грузоперевозки
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Большую часть мы отправляем товары - будь то розничная торговля, автозапчасти или электронные
+						изделия, бумага и многое другое.
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+				<a href="#" class="delivery__box swiper-slide">
+					<div class="transportation-delivery-img">
+						<img src="assets/img/delivery/transportation-delivery-2.svg" alt="">
+					</div>
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Мультимодальные <br> грузоперевозки
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Мы предлагаем индивидуальные,
+						и эффективные решения для перевозки негабаритных
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+				<a href="#" class="delivery__box swiper-slide">
+					<div class="transportation-delivery-img">
+						<img src="assets/img/delivery/transportation-delivery-3.svg" alt="">
+					</div>
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Проектные грузоперевозки
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Доставляем опасные грузы такие как: батарейки, аккумуляторы,
+						бытовая химия
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+				<a href="#" class="delivery__box swiper-slide">
+					<div class="transportation-delivery-img">
+						<img src="assets/img/delivery/transportation-delivery-4.svg" alt="">
+					</div>
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Рефрижераторные <br> грузоперевозки
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Грузы требующие температурный режим доставим
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+
+			</div>
+			<div class="swiper-scrollbar delivery-swiper-scrollbar"></div>
+		</div>
+	</div>
+</section>
+			<section class="export">
+	<div class="container">
+		<h3 class="export-title title">
+			Импорт и экспорт грузов
+		</h3>
+		<p class="export-text text">
+
+			Наша компания специализируется на оказании услуг импорта грузов и товаров. Независимо от вашей отрасли, мы
+			являемся вашим глобальным экспедитором
+		</p>
+		<div class="export__swiper ">
+			<div class="export__swiper-wrappp swiper-wrapper">
+				<div class="export__swiper-inner swiper-slide">
+					<h4 class="export__swiper-title">
+						Упрощаем процесс импорта: ваше надежное партнерство в грузоперевозках и таможенных операциях
+					</h4>
+					<ul class="export__list">
+						<li class="export__list-inner">
+							Наши услуги импорта позволят вам сосредоточиться на развитии вашего бизнеса, не тратя время
+							и ресурсы на сложности логистики и таможенной очистки. Мы гарантируем быструю и безопасную
+							доставку грузов и товаров из любой точки мира, обеспечивая полное соответствие требованиям и
+							срокам.
+						</li>
+						<li class="export__list-inner">
+							Мы также заботимся о каждой детали доставки и таможенного оформления, чтобы наши клиенты
+							могли быть уверены, что их товары будут доставлены вовремя и в сохранности.
+							Наша цель - облегчить процесс импорта для наших клиентов и помочь им развивать свой бизнес.
+						</li>
+						<li class="export__list-inner">
+							Мы стремимся к долгосрочным и взаимовыгодным отношениям с нашими клиентами, поэтому мы
+							всегда готовы предложить индивидуальные условия и гибкую систему скидок.
+						</li>
+					</ul>
+
+
+					<a href="#" class="btn-link export__swiper-btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div class="export__swiper-inner swiper-slide">
+					<h4 class="export__swiper-title">
+						Глобальное экспортное партнерство для вашего бизнеса
+					</h4>
+					<ul class="export__list">
+						<li class="export__list-inner">
+
+							Наша цель - помочь вашему бизнесу расширить свою глобальную присутствие и достичь новых
+							рынков и клиентов. Мы ценим каждого клиента и наши гибкие и индивидуальные подходы позволят
+							удовлетворить ваши уникальные потребности и требования. Не важно, малый это груз или большая
+							партия товара, мы предлагаем оптимальные решения для доставки вашего груза вовремя и в
+							полной сохранности.
+							Доверьте нам организацию экспорта вашей продукции - мы заботимся о вашем успехе и росте в
+							международном бизнесе. Обращайтесь к нам, и мы с удовольствием поможем вам реализовать ваши
+							экспортные потребности и цели.
+						</li>
+					</ul>
+					<a href="#" class="btn-link export__swiper-btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="export__swiper-line swiper-scrollbar">
+
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="delivery">
+	<div class="container">
+		<h3 class="title delivery-title cargo__delivery-title">
+			Осуществляем доставку различных грузов
+		</h3>
+		<p class="text delivery-text">
+			Вне зависимости цпецификации груза
+		</p>
+		<div class="delivery-swiper">
+			<div class="delivery-swiper-wrapp swiper-wrapper  ">
+
+				<a href="#" class="delivery__box swiper-slide">
+					<img src="assets/img/delivery/cargo-1.svg" alt="">
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Генеральные грузы
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Большую часть мы отправляем товары - будь то розничная торговля, автозапчасти или электронные
+						изделия, бумага и многое другое.
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+				<a href="#" class="delivery__box swiper-slide">
+					<img src="assets/img/delivery/cargo-2.svg" alt="">
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Сборные грузы
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Мы предлагаем индивидуальные,
+						и эффективные решения для перевозки негабаритных
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+				<a href="#" class="delivery__box swiper-slide">
+					<img src="assets/img/delivery/cargo-3.svg" alt="">
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Опасные грузы
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Доставляем опасные грузы такие как: батарейки, аккумуляторы,
+						бытовая химия
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+				<a href="#" class="delivery__box swiper-slide">
+					<img src="assets/img/delivery/cargo-4.svg" alt="">
+					<h4 class="delivery__box-title transportation-delivery-box-title">
+						Негабаритные грузы
+					</h4>
+					<p class="delivery__box-text transportation-delivery-box-text">
+						Грузы требующие температурный режим доставим
+					</p>
+					<div class="btn-link delivery__box-link">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</a>
+
+
+			</div>
+			<div class="swiper-scrollbar delivery-swiper-scrollbar"></div>
+		</div>
+	</div>
+</section>
+
+			<section class="choices transportation-choices">
+	<div class="container">
+
+		<h3 class="title choices-title transportation-choices-title">
+			Почему доверяют и выбирают нас
+		</h3>
+		<p class="choices-text transportation-choices-text">
+			Компания EASTEX готова предоставить полное сопровождение по работе
+			с таможенными органами как при ввозе на территорию РФ, так и в период постконтроля.
+		</p>
+		<p class="choices-text   transportation-choices-text">
+			Именно сегодня – в
+			условиях всеобщей неопределенности формируются новые рынки, откроются новые дороги и возможности.
+			Выиграют от этого главным образом те, кто первым ими воспользуется. Важно - войти на них быстро и
+			эффективно.
+		</p>
+		<div class="choices__wrapp transportation-choices-wrapp">
+			<div class="choices__box">
+				<div class="choices__box-header">
+					<img src="assets/img/choices/choices-1.svg" alt="">
+					<div class="choices__box-header-text">
+						Опыт
+					</div>
+				</div>
+				<p class="choices__box-text">
+					Богатый опыт в 24 года Любым удобным Вам способом сообщите нам вашу потребность. Любым удобным Вам
+					способом сообщите нам вашу потребностьЛюбым удобным Вам способом сообщите нам вашу потребность Любым
+					удобным
+				</p>
+			</div>
+			<div class="choices__box">
+				<div class="choices__box-header">
+					<img src="assets/img/choices/choices-2.svg" alt="">
+					<div class="choices__box-header-text">
+						Мы профессионалы
+					</div>
+				</div>
+				<p class="choices__box-text">
+					Заключим договор на оказание услуг. Заключим договор на оказание услуг.
+				</p>
+			</div>
+			<div class="choices__box">
+				<div class="choices__box-header">
+					<img src="assets/img/choices/choices-3.svg" alt="">
+					<div class="choices__box-header-text">
+						Отслеживание грузов
+					</div>
+				</div>
+				<p class="choices__box-text">
+					Корректно рассчитаем соответствующие платежи
+				</p>
+			</div>
+			<div class="choices__box">
+				<div class="choices__box-header">
+					<img src="assets/img/choices/choices-4.svg" alt="">
+					<div class="choices__box-header-text">
+						Комлексные услуги
+					</div>
+				</div>
+				<p class="choices__box-text">
+					Богатый опыт в 24 года Любым удобным Вам способом сообщите нам вашу потребностьЛюбым удобным Вам
+					способом сообщите нам вашу потребностьЛюбым удобным Вам способом сообщите нам вашу потребность Любым
+					удобным
+				</p>
+			</div>
+			<div class="choices__box">
+				<div class="choices__box-header">
+					<img src="assets/img/choices/choices-5.svg" alt="">
+					<div class="choices__box-header-text">
+						Работаем для вас <br> 24/7
+					</div>
+				</div>
+				<p class="choices__box-text">
+					Богатый опыт в 24 года Любым удобным Вам способом сообщите нам вашу потребность. Любым удобным Вам
+					способом сообщите нам вашу потребностьЛюбым удобным Вам способом сообщите нам вашу потребность Любым
+					удобным
+				</p>
+			</div>
+			<div class="choices__box">
+				<div class="choices__box-header">
+					<img src="assets/img/choices/choices-6.svg" alt="">
+					<div class="choices__box-header-text">
+						Документы
+					</div>
+				</div>
+				<p class="choices__box-text">
+					Богатый опыт в 24 года Любым удобным Вам способом сообщите нам вашу потребность. Любым удобным Вам
+					способом сообщите нам вашу потребностьЛюбым удобным Вам способом сообщите нам вашу потребность Любым
+					удобным
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="other transportation-other">
+	<div class="container">
+		<h3 class="other-title title">
+			Другие услуги
+		</h3>
+		<p class="other-text text">
+			Осуществляя грузов мы предоставляем и другие услуги по логистики
+		</p>
+		<div class="other__wrapp transportation-other-wrapp">
+			<div class="other__wrapp-coll">
+				<div class="other__box">
+					<h4 class="other__box-title">
+						Таможенное оформление
+					</h4>
+					<p class="other__box-text">
+						Таможенное оформление товаров и грузов
+					</p>
+					<a href="#" class="btn-link other__btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div class="other__box">
+					<h4 class="other__box-title">
+						Складские услуги
+					</h4>
+					<p class="other__box-text">
+						Прием, хранение, отгрузка груза со склада в Москве, Владивостоке и Китае
+					</p>
+					<a href="#" class="btn-link other__btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div class="other__box">
+					<h4 class="other__box-title">
+						Маркировка
+					</h4>
+					<p class="other__box-text">
+						Маркировка товаров
+					</p>
+					<a href="#" class="btn-link other__btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div class="other__box">
+					<h4 class="other__box-title">
+						Услуги 3PL
+					</h4>
+					<p class="other__box-text">
+						Обеспечим международный и внутренний таможенный транзит грузов и товаров
+					</p>
+					<a href="#" class="btn-link other__btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div class="other__box">
+					<h4 class="other__box-title">
+						Карнет АТА
+					</h4>
+					<p class="other__box-text">
+						Возьмём на себя оформление международный паспорт временного ввоза, который выполняет функцию
+						таможенной декларации
+					</p>
+					<a href="#" class="btn-link other__btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div class="other__box">
+					<h4 class="other__box-title">
+						Страхование груза
+					</h4>
+					<p class="other__box-text">
+						Страхование грузов предоставляет защиту от потерь и повреждений груза во время транспортировки.
+					</p>
+					<a href="#" class="btn-link other__btn">
+						<p>Подробнее</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+							<g clip-path="url(#clip0_1200_1187)">
+								<path
+									d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+									fill="#FFB902"></path>
+								<path
+									d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+									fill="#FFB902"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1200_1187">
+									<rect width="32.9541" height="34.1747" fill="white" transform="translate(0.835938)">
+									</rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="other__box-img">
+				<img src="assets/img/other.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="contact contact-contact">
+	<div class="wrapper contact-wrapp">
+
+		<div class="contact-block contact-contact-block">
+			<div class="contact-block-text">
+				<h3>Есть вопросы?</h3>
+				<p>Наши специалисты готовы помочь. Свяжитесь с нами, и мы найдем необходимое вам решение.</p>
+			</div>
+
+			<img src="assets/img/man.png" alt="">
+
+
+			<button class="contact-btn" data-open-modal="modal-form">Свяжитесь с нами
+				онлайн</button>
+
+		</div>
+	</div>
+</section>
+			<section class="blocks transportation-blocks">
+	<div class="wrapper">
+		<div class="blocks-header">
+			<h3 class="block-title transportation-blocks-title">НАЙДИТЕ СПОСОБЫ УЛУЧШИТЬ СВОЮ ЦЕПОЧКУ ПОСТАВОК И
+				ЛОГИСТИЧЕСКУЮ СТРАТЕГИЮ</h3>
+			<p class="blocks-description">Мы публикуем информацию, которая, по нашему мнению, будет вам полезна. Здесь
+				вы
+				найдете всю необходимую информацию о практике, тенденциях в отрасли
+				или практических инструментах. Эти ресурсы в вашем распоряжение: тематические исследования в области
+				логистики и официальные документы, а также вебинары и видеоролики о нашей работе.</p>
+		</div>
+		<div class="blocks-container blocks-swiper">
+			<div class="blocks-swiper-wrapp swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item ">
+						<img src="assets/img/block1.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+								показывала стабильный рост но, тем не менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block2.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Пограничные таможенные пункты пропуска в России</p>
+							<p class="block-content">
+								Динамика внешнеторговых отношений России и Китая за последние 20 лет показывала
+								стабильный рост но, тем не
+								менее, во внешнеторговом обороте Китая Россия
+							</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block3.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Пограничные таможенные пункты пропуска в России</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет показывала стабильный рост но, тем не
+								менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item ">
+						<img src="assets/img/block1.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+								показывала стабильный рост но, тем не менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block2.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+								показывала стабильный рост но, тем не менее, во внешнеторговом обороте Китая Россия</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="blocks-item">
+						<img src="assets/img/block3.png" alt="">
+						<div class="block-block">
+							<div class="tag">Новости</div>
+							<p class="block-header">Куда приходят грузы из Китая?</p>
+							<p class="block-content">Динамика внешнеторговых отношений России и Китая за последние 20
+								лет
+							</p>
+							<div class="industries__grid-card-link block-content-btn">
+								<p>Подробнее</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+									fill="none">
+									<g clip-path="url(#clip0_1200_1187)">
+										<path
+											d="M14.6919 24.0732L13.6621 23.0348L19.841 16.7096L13.6621 10.4789L14.7855 9.44043L21.9943 16.7096L14.6919 24.0732Z"
+											fill="#FFB902"></path>
+										<path
+											d="M16.8449 0C9.44895 0 3.17643 4.81466 0.835938 11.423L2.24023 11.9895C4.29987 5.94752 10.1043 1.60489 16.8449 1.60489C25.3643 1.60489 32.2922 8.59087 32.2922 17.1817C32.2922 25.7726 25.3643 32.7586 16.8449 32.7586C10.3851 32.7586 4.76797 28.6992 2.52109 22.9405L1.02318 23.4125C3.45729 29.7376 9.63619 34.2691 16.8449 34.2691C26.2069 34.2691 33.7901 26.6223 33.7901 17.1817C33.7901 7.74122 26.2069 0 16.8449 0Z"
+											fill="#FFB902"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_1200_1187">
+											<rect width="32.9541" height="34.1747" fill="white"
+												transform="translate(0.835938)"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="wrapper">
+		<div class="footer-container">
+			<div class="footer-container-coll">
+				<img class="footer-logo" src="assets/img/logo-footer.png" alt="">
+				<p>Международный 3pl <br> логистический оператор</p>
+			</div>
+			<div>
+				<div class="footer-menu">
+					<ul>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Перевозки</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Склады в Китае</a></li>
+						<li><a href="#">Отрасли</a></li>
+						<li><a href="#">Маркировка товара</a></li>
+						<li><a href="#">Разрешительные документы</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div>
+				<ul class="footer-contacts">
+					<li>
+						<a href="tel: +74951865463" class='footer__contact-link footer__contact-tell'>
+							<img src="assets/img/tell-white-new.png" alt="">
+							<span>
+								+7 (495) 186-54-63
+							</span>
+						</a>
+
+					</li>
+					<li>
+						<a href="mailto:info@eastex.ru" class='footer__contact-mail footer__contact-link'>
+							<img src="assets/img/mail-white-new.png" alt="">
+							<span>
+								info@eastex.ru
+							</span>
+						</a>
+
+					</li>
+					<li>
+						<div class='footer__contact-link footer__contact-text'>
+							<img src="assets/img/pin-white-new.png" alt="">
+							<span>
+								125040, г. Москва, 3-я улица Ямского поля, д. 2, корп. 12, офис 510
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class='footer__contact-link footer__contact-text'>
+							<img src="assets/img/pin-white-new.png" alt="">
+							<span>
+								690090, г.Владивосток, ул.Тигровая, 20а, помещение № 16
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p class="copyright">© 2023 Транспортно-логистическая компания «Eastex»</p>
+		<div class="footer-bottom">
+			<a href="#">Пользовательское соглашение</a>
+			<a href="#">Политика конфиденциальности</a>
+		</div>
+	</div>
+</footer>
+		<div id="modal-form" class="modal__container-fon    modal-background">
+	<form class="modal__container modal-form modal___container-content">
+		<button type="button" class="modal-btn modal-btn-close btn__modal--close">
+			<div class="header__close-line"></div>
+			<div class="header__close-line"></div>
+		</button>
+		<h3 class="modal__container-title">
+			Отправьте нам запрос по необходимой вам услуги, и мы оперативно сообщим о возможности поставки арматуры
+			в
+			ближайшее время на ваших условиях! Будем рады видеть вас в числе своих партнёров!
+		</h3>
+		<div class="modal__form-row">
+			<div class="modal__form-coll modal__form-coll-1">
+				<div class="modal__form-coll-container">
+					<input class="modal__form-input" type="text" placeholder="Имя*">
+					<input class="modal__form-input" type="tel" placeholder="7 (977) 000 44 94*">
+					<input class="modal__form-input" type="email" placeholder="E-mail*">
+				</div>
+
+				<div class="modal__form-box">
+					<label class="modal__form-label label">
+						<input multiple class="modal__form-label-input label-input" type="file">
+						<span class="modal__form-label-btn">
+							Выберете файл
+						</span>
+					</label>
+					<div class="modal__form-box-text">
+						До 5 файлов, объем не более 30Мб
+					</div>
+				</div>
+				<div class="modal__form-box-checked">
+					<label class="modal__form-check label label-check">
+						<input class="modal__form-check-input lable__check-input label-input" type="checkbox">
+						<span class="modal__form-check-span label__check-span">
+							Подтверждаю, что являюсь юридическим лицом*
+						</span>
+					</label>
+					<label class="modal__form-check label label-check">
+						<input class="modal__form-check-input lable__check-input label-input" type="checkbox">
+						<span class="modal__form-check-span label__check-span">
+							Принимаю условия Политики конфиденциальности
+						</span>
+					</label>
+				</div>
+
+			</div>
+
+			<div class="modal__form-coll modal__form-coll-2">
+				<div class="moda__form-get">
+
+				</div>
+				<div class="modal__form-captcha">
+
+				</div>
+			</div>
+			<button type="submit" class="modal__form-coll-3 modal__form-btn btn__modal--close">
+				Отправит запрос
+			</button>
+		</div>
+	</form>
+</div>
+	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
