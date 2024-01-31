@@ -1294,3 +1294,43 @@ const exportSwipers = () => {
 };
 exportSwipers();
 
+gsap.registerPlugin(ScrollTrigger);
+function lifeScroll() {
+	let containerScroll = document.querySelector(".life ");
+	let sections = gsap.utils.toArray(".life__wrapp .life__box");
+	if (containerScroll && sections) {
+		let animate = gsap.timeline({
+			scrollTrigger: {
+				pin: true,
+				scrub: 1,
+				trigger: containerScroll,
+				start: "bottom bottom",
+				invalidateOnRefresh: true,
+				end: () =>
+					"+=" +
+					(containerScroll.scrollWidth -
+						document.documentElement.clientWidth),
+			},
+		});
+
+		animate.to(
+			sections,
+			{
+				x: () =>
+					-(
+						containerScroll.scrollWidth -
+						document.documentElement.clientWidth
+					) + "px",
+				duration: 1,
+				ease: "none",
+			},
+			0.05
+		);
+		animate.to({}, { duration: 0.1 });
+	}
+}
+lifeScroll();
+
+
+
+
