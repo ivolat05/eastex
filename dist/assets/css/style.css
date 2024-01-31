@@ -11475,3 +11475,7 @@ input:checked + .retail__client-link {
   font-weight: 400;
   line-height: normal;
 }
+
+.life__box-1 .life__box-coll {
+  width: initial;
+}
