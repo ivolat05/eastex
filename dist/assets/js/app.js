@@ -463,6 +463,15 @@ function geografySwiperBlock() {
 		},
 
 		autoHeight: true,
+		breakpoints: {
+			320: {
+				autoHeight: true,
+			},
+
+			772: {
+				autoHeight: false,
+			},
+		},
 	};
 	if (geografyWrapp) {
 		const geografySwiper = new Swiper(geografyWrapp, geografyInstall);
@@ -535,19 +544,21 @@ const companySwipers = () => {
 };
 companySwipers();
 
+// вносились правки
 function headerSwiper() {
 	const headerWrapp = document.querySelector(".header__head-swiper");
 	const headerInstall = {
 		slidesPerView: 1,
-		spaceBetween: 15,
+		spaceBetween: 35,
 		loop: true,
 		autoplay: {
 			delay: 4000,
 		},
-		autoHeight: true,
+
 		pagination: {
 			el: ".header__swiper-pagination",
 			type: "bullets",
+			clickable: true,
 		},
 	};
 	if (headerWrapp) {
